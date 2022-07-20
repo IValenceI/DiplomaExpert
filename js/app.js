@@ -2873,7 +2873,7 @@
         }
         if (document.querySelector("#flipbook").addEventListener) if ("onwheel" in document) document.querySelector("#flipbook").addEventListener("wheel", onWheel); else if ("onmousewheel" in document) document.querySelector("#flipbook").addEventListener("mousewheel", onWheel); else document.querySelector("#flipbook").addEventListener("MozMousePixelScroll", onWheel); else document.querySelector("#flipbook").attachEvent("onmousewheel", onWheel);
         function onWheel(e) {
-            if (window.matchMedia("(min-width: 1200px)").matches) if (e.deltaY > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous");
+            if (window.matchMedia("(min-width: 100px)").matches) if (e.deltaY > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous");
         }
         $(document).ready((function() {
             $("a.scrollto").click((function(e) {
@@ -2890,8 +2890,8 @@
                 if ($(e.target).hasClass("_chapter-six")) $("#flipbook").turn("page", 8);
                 if ($(e.target).hasClass("_chapter-seven")) $("#flipbook").turn("page", 9);
                 if ($(e.target).hasClass("_chapter-eight")) $("#flipbook").turn("page", 10);
-                if ($(e.target).hasClass("_chapter-nine")) $("#flipbook").turn("page", 11);
-                if ($(e.target).hasClass("_chapter-ten")) $("#flipbook").turn("hard", 1);
+                if ($(e.target).hasClass("_chapter-nine")) $("#flipbook").turn("page", 12);
+                if ($(e.target).hasClass("_chapter-ten")) $("#flipbook").turn("hard",1 );
 
             }));
         }));

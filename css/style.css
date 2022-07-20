@@ -918,8 +918,8 @@ footer {
 
 header,
 footer,
-main#home {
-  font-family: "PitchWeb", Courier, monospace;
+body#homepage{
+  font-family: "Lora", Courier, monospace;
 }
 
 a {
@@ -1087,6 +1087,8 @@ a.nextchap span {
 }
 
 a.buy {
+  font-family: "Lora", Courier, serif;
+  font-size: 16px;
   text-decoration: none;
   background-color: black;
   color: white;
@@ -1103,8 +1105,8 @@ a.buy {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 5em;
-  height: 5em;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
   position: fixed;
   right: 1.5rem;
@@ -1371,6 +1373,12 @@ body {
   font-weight: bolder;
   background-color: #edcdba;
 }
+.hard2 {
+
+  color: white;
+  font-weight: bolder;
+  background-color: #edcdba;
+}
 
 .hard.p2 {
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, white), to(#ebebeb));
@@ -1402,61 +1410,9 @@ body {
 }
 
 .pages2 {
-  background: url(../img/D.webp);
+  background: url("/img/D.webp");
   background-size: 100% 100%;
   background-color: white;
-}
-
-.pages.even {
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, white), to(#ebebeb));
-  background: -o-linear-gradient(left, white 0%, white 55%, #ebebeb 100%);
-  background: linear-gradient(to right, white 0%, white 55%, #ebebeb 100%);
-}
-
-.pages.even::after {
-  content: "";
-  position: absolute;
-  cursor: pointer;
-  width: 60px;
-  top: 0;
-  left: 0;
-  height: 60px;
-}
-
-.pages.even::before {
-  content: "";
-  position: absolute;
-  cursor: pointer;
-  width: 60px;
-  bottom: 0;
-  left: 0;
-  height: 60px;
-}
-
-.pages.odd {
-  background: -webkit-gradient(linear, right top, left top, from(white), color-stop(55%, white), to(#ebebeb));
-  background: -o-linear-gradient(right, white 0%, white 55%, #ebebeb 100%);
-  background: linear-gradient(to left, white 0%, white 55%, #ebebeb 100%);
-}
-
-.pages.odd::after {
-  content: "";
-  position: absolute;
-  cursor: pointer;
-  width: 60px;
-  top: 0;
-  right: 0;
-  height: 60px;
-}
-
-.pages.odd::before {
-  content: "";
-  position: absolute;
-  cursor: pointer;
-  width: 60px;
-  bottom: 0;
-  right: 0;
-  height: 60px;
 }
 
 .footer {
@@ -1606,6 +1562,19 @@ body {
   background-color: rgb(241, 201, 166);
   border-radius: 0.3125rem;
 }
+.labels{
+  position: absolute;
+  top: -90%;
+  left: 0;
+  font-size: 11px;
+  line-height: 1.15;
+}
+.svasok{
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 10px
+}
+
 
 @media (min-width: 500px) {
   header h2 {
@@ -1808,6 +1777,12 @@ body {
             order: 2;
     padding: 0 2rem;
   }
+  a.buy {
+    right: 2rem;
+    top: 2rem;
+    width: 6em;
+    height: 6em;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -1815,11 +1790,17 @@ body {
     width: 75vw;
     height: 53.033008589vw;
   }
+  a.buy {
+    right: 2rem;
+    top: 2rem;
+    width: 6em;
+    height: 6em;
+  }
 }
 
 @media (max-width: 1250px) {
   .flipbook-form {
-    width: 60%;
+    width: 65%;
     margin-top: 3rem;
   }
   .flipbook-form__button {
@@ -1828,6 +1809,171 @@ body {
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
     border-radius: 0.3125rem;
+  }
+  a.buy {
+    right: 2rem;
+    top: 2rem;
+    width: 6em;
+    height: 6em;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-size: 0.8rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    color: #fff;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1905,11 +2051,350 @@ body {
     width: 90vw;
     height: 63.6396103068vw;
   }
+  .flipbook-form {
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .flipbook-form__button {
+    color: #fff;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-size: 0.8rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    color: #fff;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 800px) {
   body {
     margin: 0;
+  }
+  .flipbook-form {
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .flipbook-form__button {
+    color: #fff;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-size: 0.7rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    color: #fff;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -1977,8 +2462,392 @@ body {
     width: 90vw;
     height: 127.2792206136vw;
   }
+  a.buy {
+    font-family: "Lora", Courier, monospace;
+    font-size: 10px;
+    background-color: #edcdba;
+    color: #3d3d3d;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  a.buy:hover {
+    background-image: none;
+    background-color: #edcdba;
+    -webkit-animation: rotation 5s infinite linear;
+  }
+  .flipbook-form {
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .flipbook-form__button {
+    color: #fff;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-size: 0.7rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    color: #fff;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 0.3rem;
+  }
 }
 
+@media (max-width: 320px) {
+  #flipbook {
+    width: 90vw;
+    height: 127.2792206136vw;
+  }
+
+  main#home blockquote {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+
+  a.buy {
+    font-family: "Lora", Courier, monospace;
+    font-size: 8px;
+    background-color: #edcdba;
+    color: #3d3d3d;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  a.buy:hover {
+    background-image: none;
+    background-color: #edcdba;
+    -webkit-animation: rotation 5s infinite linear;
+  }
+  .flipbook-form {
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .flipbook-form__button {
+    color: #fff;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-size: 0.7rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    color: #fff;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 37.5em) {
   header {
     padding: 0.625rem 1rem;
@@ -2026,7 +2895,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/preloader.gif) no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  background: url('/img/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
 }
 
 .loaded_hiding .preloader {

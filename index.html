@@ -13,9 +13,9 @@
 </head>
 <body id="homepage">
 <!-- Прелоадер -->
-<div class="preloader">
+<!--<div class="preloader">
 	<div class="preloader__image"></div>
-</div>
+</div>-->
 <canvas id="particle-canvas"></canvas>
 	<header>
 		<div>
@@ -25,6 +25,7 @@
 			</a>
 		</div>
 		<a href="https://t.me/Diploma_Expert_Bot" target="_blank" class="buy">ПИТАННЯ</a>
+		<!-- <script  id="ss-gadget" src="https://customer.smartsender.eu/js/client/gd.min.js?v2.0.0" data-target="yrmWz44W" data-domain="dipexpbot"></script>-->
 	</header>
 	<article>
 		<main id="home">
@@ -37,7 +38,7 @@
 				<!-- partial:index.partial.html -->
 				<div id="flipbook" class="flipbook">
 					<div class="hard"> <picture><source data-srcset="img/1h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/1h.png" style="width: 100%"></picture></div>
-					<div class="hard"> <picture><source data-srcset="img/2h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2h.png" style="width: 100%"></picture></div>
+					<div class="hard2"> <picture><source data-srcset="img/2h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2h.png" style="width: 100%"></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/1.png" alt=""></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2.png" alt=""></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3.png" alt=""></picture></div>
@@ -49,10 +50,11 @@
 							<select name="select" data-class-modif="form">
 								<option value="1" selected>Диплом</option>
 								<option value="2">Магістерська</option>
-								<option value="3">Курсова</option>
-								<option value="4">Звіт з практики</option>
-								<option value="5">Презентація</option>
-								<option value="6">Доповідь</option>
+								<option value="3">Кваліфікаційна робота</option>
+								<option value="4">Курсова</option>
+								<option value="5">Звіт з практики</option>
+								<option value="6">Презентація</option>
+								<option value="7">Доповідь</option>
 							</select>
 							<label for="topic">Тема роботи</label>
 							<input id="topic" data-required autocomplete="off" type="text" name="topic" placeholder="Введіть тему" class="flipbook-form__input">
@@ -68,7 +70,7 @@
 							</div>
 							<div class="flipbook-form__block">
 								<div class="flipbook-form__inputname">
-									<label style="display: block; white-space: nowrap; margin-bottom: 10px">Оберіть спосіб зв'язку</label>
+									<label class="svasok">Оберіть спосіб зв'язку</label>
 									<div class="flipbook-form__radio-block">
 										<div class="options">
 											<div class="options__item">
@@ -83,7 +85,7 @@
 									</div>
 								</div>
 								<div class="flipbook-form__inputname flipbook-form__inputname_tel-email">
-									<label style="position: absolute; top: -42%; left: 0; font-size: 11px; line-height: 1.15">Ми зв`яжемося з вами протягом доби</label>
+									<label class="labels">Ми зв`яжемося з вами протягом доби</label>
 									<input data-required autocomplete="off" type="text" name="Contact" placeholder="+38 0XX XXX XX XX" class="flipbook-form__input _tel">
 									<input data-required="email" autocomplete="off" type="email" name="Contact" placeholder="E-mail" class="flipbook-form__input _email">
 								</div>
@@ -101,7 +103,7 @@
 						</form>
 					</div>
 					<div class="pages"> <picture><source data-srcset="img/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/7.png" alt=""></picture></div>
-					<div class="hard"> <picture><source data-srcset="img/3h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3h.png" style="width: 100%"></picture></div>
+					<div class="hard2"> <picture><source data-srcset="img/3h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3h.png" style="width: 100%"></picture></div>
 					<div class="hard"> <picture><source data-srcset="img/4h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4h.png" style="width: 100%"></picture></div>
 				</div>
 			</div>
