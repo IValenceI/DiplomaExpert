@@ -2462,6 +2462,10 @@ body {
     width: 90vw;
     height: 127.2792206136vw;
   }
+  main#home blockquote {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
   a.buy {
     font-family: "Lora", Courier, monospace;
     font-size: 10px;
