@@ -2433,7 +2433,7 @@ body {
   }
 
   main#home div.cover {
-    margin: 0.3em 0;
+    margin: 0.5em 0;
   }
 
   article {
@@ -2897,7 +2897,7 @@ body {
 
   main#home blockquote {
     line-height: 1;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   a.buy {
@@ -2909,7 +2909,7 @@ body {
     height: 5em;
     border-radius: 50%;
     right: 1rem;
-    top: 1rem;
+    top: 1.2rem;
   }
 
   a.buy:hover {
