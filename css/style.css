@@ -2425,7 +2425,7 @@ body {
 
 @media (max-width: 600px) {
   article {
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 
   .menu-button {
@@ -2433,7 +2433,7 @@ body {
   }
 
   main#home div.cover {
-    margin: 0.7em 0;
+    margin: 1em 0;
   }
 
   article {
@@ -2496,8 +2496,8 @@ body {
     font-size: 12px;
     background-color: #edcdba;
     color: #3d3d3d;
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     right: 1rem;
     top: 1.5rem;
@@ -3105,6 +3105,17 @@ body {
     width: 90vw;
     height: 127.2792206136vw;
   }
+  article {
+    margin-top: 1rem;
+  }
+
+  .menu-button {
+    top: 2px;
+  }
+
+  main#home div.cover {
+    margin: 1em 0;
+  }
 
   main#home blockquote {
     line-height: 1;
@@ -3147,10 +3158,21 @@ body {
     line-height: 1;
     font-size: 0.8rem;
   }
+  article {
+    margin-top: 1rem;
+  }
+
+  .menu-button {
+    top: 2px;
+  }
+
+  main#home div.cover {
+    margin: 1em 0;
+  }
 
   a.buy {
     font-family: "Lora", Courier, monospace;
-    font-size: 10px;
+    font-size: 9px;
     background-color: #edcdba;
     color: #3d3d3d;
     width: 5em;
