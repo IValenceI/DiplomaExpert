@@ -208,6 +208,8 @@
 }
 
 .select__value > * {
+  font-family: 'Lora', serif;
+  font-weight: bold;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -277,6 +279,8 @@
 }
 
 .select__option {
+  font-family: 'Lora', serif;
+  font-weight: bold;
   width: 100%;
   text-align: left;
   cursor: pointer;
@@ -1310,7 +1314,6 @@ main#home div.cover img {
 
 main#home blockquote {
   text-align: center;
-  margin-top: 2rem;
   max-width: 25em;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35%;
@@ -1410,7 +1413,7 @@ body {
 }
 
 .pages2 {
-  background: url(../img/D.webp);
+  background: url("/img/D.webp");
   background-size: 100% 100%;
   background-color: white;
 }
@@ -1488,6 +1491,8 @@ body {
 }
 
 .flipbook-form label {
+  font-family: 'Lora', serif;
+  font-weight: bold;
   font-size: 1.125rem;
 }
 
@@ -1556,7 +1561,9 @@ body {
 }
 
 .flipbook-form__button {
-  color: #fff;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #3d3d3d;
   width: 100%;
   padding: 0.625rem 1.25rem;
   background-color: rgb(241, 201, 166);
@@ -1804,7 +1811,9 @@ body {
     margin-top: 3rem;
   }
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -1868,6 +1877,8 @@ body {
   }
 
   .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 0.8rem;
   }
 
@@ -1936,7 +1947,9 @@ body {
   }
 
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -1985,7 +1998,7 @@ body {
 
 @media (max-width: 900px) {
   article {
-    margin-top: 2rem;
+    margin-top: 0rem;
     padding: 0 2rem;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -2056,7 +2069,9 @@ body {
     margin-top: 0rem;
   }
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 80%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2114,6 +2129,8 @@ body {
   }
 
   .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 0.8rem;
   }
 
@@ -2182,7 +2199,9 @@ body {
   }
 
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2232,7 +2251,9 @@ body {
     margin-top: 0rem;
   }
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 80%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2290,6 +2311,8 @@ body {
   }
 
   .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 0.7rem;
   }
 
@@ -2358,7 +2381,9 @@ body {
   }
 
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2400,7 +2425,7 @@ body {
 
 @media (max-width: 600px) {
   article {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .menu-button {
@@ -2464,7 +2489,7 @@ body {
   }
   main#home blockquote {
     line-height: 1;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   a.buy {
     font-family: "Lora", Courier, monospace;
@@ -2488,7 +2513,9 @@ body {
     margin-top: 0rem;
   }
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 80%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2546,6 +2573,8 @@ body {
   }
 
   .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 0.7rem;
   }
 
@@ -2614,7 +2643,9 @@ body {
   }
 
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2654,24 +2685,22 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   #flipbook {
     width: 90vw;
     height: 127.2792206136vw;
   }
-
   main#home blockquote {
     line-height: 1;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
-
   a.buy {
     font-family: "Lora", Courier, monospace;
     font-size: 8px;
     background-color: #edcdba;
     color: #3d3d3d;
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
     right: 1rem;
     top: 1.5rem;
@@ -2687,7 +2716,9 @@ body {
     margin-top: 0rem;
   }
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 80%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2745,6 +2776,8 @@ body {
   }
 
   .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
     font-size: 0.7rem;
   }
 
@@ -2813,7 +2846,215 @@ body {
   }
 
   .flipbook-form__button {
-    color: #fff;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .labels{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+  .checkbox:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+  .svasok{
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 0px
+  }
+  .select__body {
+    position: relative;
+  }
+
+  .select__title {
+    padding: 0.3125rem 0;
+    color: inherit;
+    text-align: left;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  .select:not(:last-child) {
+    margin-bottom: 0.3rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  #flipbook {
+    width: 90vw;
+    height: 127.2792206136vw;
+  }
+
+  main#home blockquote {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+
+  a.buy {
+    font-family: "Lora", Courier, monospace;
+    font-size: 8px;
+    background-color: #edcdba;
+    color: #3d3d3d;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1.5rem;
+  }
+
+  a.buy:hover {
+    background-image: none;
+    background-color: #edcdba;
+    -webkit-animation: rotation 5s infinite linear;
+  }
+  .flipbook-form {
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .flipbook-form__button {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    background-color: rgb(241, 201, 166);
+    border-radius: 0.3125rem;
+  }
+  .flipbook-form {
+    margin: 50px 10px;
+    position: relative;
+    width: 75%;
+    z-index: 2;
+  }
+
+  .flipbook-form__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .flipbook-form__block:not(:last-child) {
+    margin-bottom: 0.1rem;
+  }
+
+  .flipbook-form__inputname {
+    width: 48%;
+  }
+
+  .flipbook-form__inputname_tel-email {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .flipbook-form__inputname_tel-email ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._email {
+    display: block;
+  }
+
+  .flipbook-form__inputname_tel-email._email ._tel {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._email {
+    display: none;
+  }
+
+  .flipbook-form__inputname_tel-email._tel ._tel {
+    display: block;
+  }
+
+  .flipbook-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  .flipbook-form__input {
+    padding: 0.1rem 0.05rem;
+    background-color: transparent;
+    width: 100%;
+    font-size: 0.8rem;
+    color: #000;
+    border: none;
+    border: 0.125rem solid transparent;
+    border-bottom: 0.125rem solid #000;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__input:not(:last-child) {
+    margin-bottom: 0.2rem;
+  }
+
+  .flipbook-form__input._tel,
+  .flipbook-form__input._email {
+    margin-bottom: 0;
+  }
+
+  .flipbook-form__input:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #000;
+  }
+
+  .flipbook-form__input._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea {
+    resize: none;
+    width: 100%;
+    min-height: 2.5rem;
+    border: 0.125rem solid #000;
+    color: #000;
+    padding: 0.625rem 0.9375rem;
+    outline: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .flipbook-form__textarea:focus {
+    -webkit-box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.3);
+  }
+
+  .flipbook-form__textarea._form-error {
+    border-color: red;
+    -webkit-box-shadow: 0 0 0.125rem red;
+    box-shadow: 0 0 0.125rem red;
+  }
+
+  .flipbook-form__textarea:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .flipbook-form__button {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #3d3d3d;
     width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: rgb(241, 201, 166);
@@ -2899,7 +3140,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../img/preloader.gif) no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  background: url('/img/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
 }
 
 .loaded_hiding .preloader {
