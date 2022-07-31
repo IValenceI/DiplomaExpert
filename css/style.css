@@ -2433,7 +2433,7 @@ body {
   }
 
   main#home div.cover {
-    margin: 0.5em 0;
+    margin: 1em 0;
   }
 
   article {
@@ -2696,11 +2696,11 @@ body {
   }
   a.buy {
     font-family: "Lora", Courier, monospace;
-    font-size: 8px;
+    font-size: 10px;
     background-color: #edcdba;
     color: #3d3d3d;
-    width: 6em;
-    height: 6em;
+    width: 7em;
+    height: 7em;
     border-radius: 50%;
     right: 1rem;
     top: 1.5rem;
@@ -2905,11 +2905,11 @@ body {
     font-size: 8px;
     background-color: #edcdba;
     color: #3d3d3d;
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 8em;
     border-radius: 50%;
     right: 1rem;
-    top: 1.2rem;
+    top: 1.4rem;
   }
 
   a.buy:hover {
@@ -3113,7 +3113,7 @@ body {
 
   a.buy {
     font-family: "Lora", Courier, monospace;
-    font-size: 8px;
+    font-size: 10px;
     background-color: #edcdba;
     color: #3d3d3d;
     width: 5em;
@@ -3138,6 +3138,34 @@ body {
     width: 10%;
     height: 7.5%;
   }
+  #flipbook {
+    width: 90vw;
+    height: 127.2792206136vw;
+  }
+
+  main#home blockquote {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+
+  a.buy {
+    font-family: "Lora", Courier, monospace;
+    font-size: 10px;
+    background-color: #edcdba;
+    color: #3d3d3d;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  a.buy:hover {
+    background-image: none;
+    background-color: #edcdba;
+    -webkit-animation: rotation 5s infinite linear;
+  }
+}
 }
 
 @media (any-hover: hover) {
