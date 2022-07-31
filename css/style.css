@@ -3106,7 +3106,7 @@ body {
     height: 127.2792206136vw;
   }
   article {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .menu-button {
@@ -3114,7 +3114,7 @@ body {
   }
 
   main#home div.cover {
-    margin: 1em 0;
+    margin: 0.5em 0;
   }
 
   main#home blockquote {
@@ -3159,7 +3159,7 @@ body {
     font-size: 0.8rem;
   }
   article {
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .menu-button {
@@ -3167,7 +3167,7 @@ body {
   }
 
   main#home div.cover {
-    margin: 1em 0;
+    margin: 0.5em 0;
   }
 
   a.buy {
