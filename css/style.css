@@ -3101,6 +3101,33 @@ body {
             flex: 0 0 auto;
     width: 100%;
   }
+  #flipbook {
+    width: 90vw;
+    height: 127.2792206136vw;
+  }
+
+  main#home blockquote {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+
+  a.buy {
+    font-family: "Lora", Courier, monospace;
+    font-size: 8px;
+    background-color: #edcdba;
+    color: #3d3d3d;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  a.buy:hover {
+    background-image: none;
+    background-color: #edcdba;
+    -webkit-animation: rotation 5s infinite linear;
+  }
 }
 
 @media (max-width: 25.9375em) {
