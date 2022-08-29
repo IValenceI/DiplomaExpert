@@ -71,7 +71,7 @@
                     }
                     function u(e, t) {
                         var n = e.calendar.querySelector(".qs-overlay"), a = n && !n.classList.contains("qs-hidden");
-                        t = t || new Date(e.currentYear, e.currentMonth), e.calendar.innerHTML = [ h(t, e, a), f(t, e, a), v(e, a) ].join(""), 
+                        t = t || new Date(e.currentYear, e.currentMonth), e.calendar.innerHTML = [ h(t, e, a), f(t, e, a), v(e, a) ].join(""),
                         a && window.requestAnimationFrame((function() {
                             M(!0, e);
                         }));
@@ -86,17 +86,17 @@
                         S += (w + b) % 7 ? 7 : 0;
                         for (var M = 1; M <= S; M++) {
                             var E = (M - 1) % 7, x = d[E], C = M - (w >= 0 ? w : 7 + w), L = new Date(r, a, C), Y = f[+L], j = C < 1 || C > b, P = j ? C < 1 ? -1 : 1 : 0, k = j && !l, O = k ? "" : L.getDate(), N = +L == +i, _ = E === h[0] || E === h[1], I = m !== y, A = "qs-square " + x;
-                            Y && !k && (A += " qs-event"), j && (A += " qs-outside-current-month"), !l && j || (A += " qs-num"), 
-                            N && (A += " qs-active"), (c[+L] || t.disabler(L) || _ && t.noWeekends || s && +L < +s || o && +L > +o) && !k && (A += " qs-disabled"), 
-                            +g(new Date) == +L && (A += " qs-current"), +L === m && y && I && (A += " qs-range-start"), 
-                            +L > m && +L < y && (A += " qs-range-middle"), +L === y && m && I && (A += " qs-range-end"), 
+                            Y && !k && (A += " qs-event"), j && (A += " qs-outside-current-month"), !l && j || (A += " qs-num"),
+                            N && (A += " qs-active"), (c[+L] || t.disabler(L) || _ && t.noWeekends || s && +L < +s || o && +L > +o) && !k && (A += " qs-disabled"),
+                            +g(new Date) == +L && (A += " qs-current"), +L === m && y && I && (A += " qs-range-start"),
+                            +L > m && +L < y && (A += " qs-range-middle"), +L === y && m && I && (A += " qs-range-end"),
                             k && (A += " qs-empty", O = ""), q.push('<div class="' + A + '" data-direction="' + P + '">' + O + "</div>");
                         }
                         var R = d.map((function(e) {
                             return '<div class="qs-square qs-day">' + e + "</div>";
                         })).concat(q);
-                        return R.unshift('<div class="qs-squares' + (n ? " qs-blur" : "") + '">'), R.push("</div>"), 
-                        R.join("");
+                        return R.unshift('<div class="qs-squares' + (n ? " qs-blur" : "") + '">'), R.push("</div>"),
+                            R.join("");
                     }
                     function v(e, t) {
                         var n = e.overlayPlaceholder, a = e.overlayButton;
@@ -106,26 +106,26 @@
                     }
                     function m(e, t, n) {
                         var a = t.el, r = t.calendar.querySelector(".qs-active"), i = e.textContent, o = t.sibling;
-                        (a.disabled || a.readOnly) && t.respectDisabledReadOnly || (t.dateSelected = n ? void 0 : new Date(t.currentYear, t.currentMonth, i), 
-                        r && r.classList.remove("qs-active"), n || e.classList.add("qs-active"), p(a, t, n), 
+                        (a.disabled || a.readOnly) && t.respectDisabledReadOnly || (t.dateSelected = n ? void 0 : new Date(t.currentYear, t.currentMonth, i),
+                        r && r.classList.remove("qs-active"), n || e.classList.add("qs-active"), p(a, t, n),
                         n || q(t), o && (y({
                             instance: t,
                             deselect: n
-                        }), t.first && !o.dateSelected && (o.currentYear = t.currentYear, o.currentMonth = t.currentMonth, 
-                        o.currentMonthName = t.currentMonthName), u(t), u(o)), t.onSelect(t, n ? void 0 : new Date(t.dateSelected)));
+                        }), t.first && !o.dateSelected && (o.currentYear = t.currentYear, o.currentMonth = t.currentMonth,
+                            o.currentMonthName = t.currentMonthName), u(t), u(o)), t.onSelect(t, n ? void 0 : new Date(t.dateSelected)));
                     }
                     function y(e) {
                         var t = e.instance.first ? e.instance : e.instance.sibling, n = t.sibling;
-                        t === e.instance ? e.deselect ? (t.minDate = t.originalMinDate, n.minDate = n.originalMinDate) : n.minDate = t.dateSelected : e.deselect ? (n.maxDate = n.originalMaxDate, 
-                        t.maxDate = t.originalMaxDate) : t.maxDate = n.dateSelected;
+                        t === e.instance ? e.deselect ? (t.minDate = t.originalMinDate, n.minDate = n.originalMinDate) : n.minDate = t.dateSelected : e.deselect ? (n.maxDate = n.originalMaxDate,
+                            t.maxDate = t.originalMaxDate) : t.maxDate = n.dateSelected;
                     }
                     function p(e, t, n) {
                         if (!t.nonInput) return n ? e.value = "" : t.formatter !== s ? t.formatter(e, t.dateSelected, t) : void (e.value = t.dateSelected.toDateString());
                     }
                     function w(e, t, n, a) {
-                        n || a ? (n && (t.currentYear = +n), a && (t.currentMonth = +a)) : (t.currentMonth += e.contains("qs-right") ? 1 : -1, 
-                        12 === t.currentMonth ? (t.currentMonth = 0, t.currentYear++) : -1 === t.currentMonth && (t.currentMonth = 11, 
-                        t.currentYear--)), t.currentMonthName = t.months[t.currentMonth], u(t), t.onMonthChange(t);
+                        n || a ? (n && (t.currentYear = +n), a && (t.currentMonth = +a)) : (t.currentMonth += e.contains("qs-right") ? 1 : -1,
+                            12 === t.currentMonth ? (t.currentMonth = 0, t.currentYear++) : -1 === t.currentMonth && (t.currentMonth = 11,
+                                t.currentYear--)), t.currentMonthName = t.months[t.currentMonth], u(t), t.onMonthChange(t);
                     }
                     function D(e) {
                         if (!e.noPosition) {
@@ -145,18 +145,18 @@
                         }
                     }
                     function q(e) {
-                        e.disabled || !e.calendarContainer.classList.contains("qs-hidden") && !e.alwaysShow && ("overlay" !== e.defaultView && M(!0, e), 
-                        e.calendarContainer.classList.add("qs-hidden"), e.onHide(e));
+                        e.disabled || !e.calendarContainer.classList.contains("qs-hidden") && !e.alwaysShow && ("overlay" !== e.defaultView && M(!0, e),
+                            e.calendarContainer.classList.add("qs-hidden"), e.onHide(e));
                     }
                     function S(e) {
-                        e.disabled || (e.calendarContainer.classList.remove("qs-hidden"), "overlay" === e.defaultView && M(!1, e), 
-                        D(e), e.onShow(e));
+                        e.disabled || (e.calendarContainer.classList.remove("qs-hidden"), "overlay" === e.defaultView && M(!1, e),
+                            D(e), e.onShow(e));
                     }
                     function M(e, t) {
                         var n = t.calendar, a = n.querySelector(".qs-overlay"), r = a.querySelector(".qs-overlay-year"), i = n.querySelector(".qs-controls"), o = n.querySelector(".qs-squares");
-                        e ? (a.classList.add("qs-hidden"), i.classList.remove("qs-blur"), o.classList.remove("qs-blur"), 
-                        r.value = "") : (a.classList.remove("qs-hidden"), i.classList.add("qs-blur"), o.classList.add("qs-blur"), 
-                        r.focus());
+                        e ? (a.classList.add("qs-hidden"), i.classList.remove("qs-blur"), o.classList.remove("qs-blur"),
+                            r.value = "") : (a.classList.remove("qs-hidden"), i.classList.add("qs-blur"), o.classList.add("qs-blur"),
+                            r.focus());
                     }
                     function E(e, t, n, a) {
                         var r = isNaN(+(new Date).setFullYear(t.value || void 0)), i = r ? null : t.value;
@@ -184,8 +184,8 @@
                                     if (o.contains("qs-num")) {
                                         var b = r.textContent, g = +r.dataset.direction, x = new Date(s.currentYear, s.currentMonth + g, b);
                                         if (g) {
-                                            s.currentYear = x.getFullYear(), s.currentMonth = x.getMonth(), s.currentMonthName = i[s.currentMonth], 
-                                            u(s);
+                                            s.currentYear = x.getFullYear(), s.currentMonth = x.getMonth(), s.currentMonthName = i[s.currentMonth],
+                                                u(s);
                                             for (var L, Y = s.calendar.querySelectorAll('[data-direction="0"]'), j = 0; !L; ) {
                                                 var P = Y[j];
                                                 P.textContent === b && (L = P), j++;
@@ -230,8 +230,8 @@
                         }), u(i)), u(this), this;
                         if (!b(e)) throw new Error("`setDate` needs a JavaScript Date object.");
                         if (this.disabledDates[+n] || n < this.minDate || n > this.maxDate) throw new Error("You can't manually set a date that's disabled.");
-                        this.dateSelected = n, t && (this.currentYear = n.getFullYear(), this.currentMonth = n.getMonth(), 
-                        this.currentMonthName = this.months[n.getMonth()]), p(this.el, this), i && (y({
+                        this.dateSelected = n, t && (this.currentYear = n.getFullYear(), this.currentMonth = n.getMonth(),
+                            this.currentMonthName = this.months[n.getMonth()]), p(this.el, this), i && (y({
                             instance: this
                         }), u(i));
                         var o = a === n.getFullYear() && r === n.getMonth();
@@ -257,13 +257,13 @@
                         function v() {
                             throw new Error("Out-of-range date passed to " + f());
                         }
-                        if (null == t) e[c()] = void 0, i ? (i[c()] = void 0, n ? (r && !a || !r && !i.dateSelected) && (e.minDate = void 0, 
-                        i.minDate = void 0) : (r && !i.dateSelected || !r && !a) && (e.maxDate = void 0, 
-                        i.maxDate = void 0)) : e[h()] = void 0; else {
+                        if (null == t) e[c()] = void 0, i ? (i[c()] = void 0, n ? (r && !a || !r && !i.dateSelected) && (e.minDate = void 0,
+                            i.minDate = void 0) : (r && !i.dateSelected || !r && !a) && (e.maxDate = void 0,
+                            i.maxDate = void 0)) : e[h()] = void 0; else {
                             if (!b(t)) throw new Error("Invalid date passed to " + f());
-                            i ? ((r && n && l > (a || s) || r && !n && l < (i.dateSelected || o) || !r && n && l > (i.dateSelected || s) || !r && !n && l < (a || o)) && v(), 
-                            e[c()] = l, i[c()] = l, (n && (r && !a || !r && !i.dateSelected) || !n && (r && !i.dateSelected || !r && !a)) && (e[h()] = l, 
-                            i[h()] = l)) : ((n && l > (a || s) || !n && l < (a || o)) && v(), e[h()] = l);
+                            i ? ((r && n && l > (a || s) || r && !n && l < (i.dateSelected || o) || !r && n && l > (i.dateSelected || s) || !r && !n && l < (a || o)) && v(),
+                                e[c()] = l, i[c()] = l, (n && (r && !a || !r && !i.dateSelected) || !n && (r && !i.dateSelected || !r && !a)) && (e[h()] = l,
+                                i[h()] = l)) : ((n && l > (a || s) || !n && l < (a || o)) && v(), e[h()] = l);
                         }
                         return i && u(i), u(e), e;
                     }
@@ -367,8 +367,8 @@
                                 if ("[object ShadowRoot]" === x(u)) throw new Error("Using a shadow DOM as your selector is not supported.");
                                 for (var h, f = u.parentNode; !h; ) {
                                     var v = x(f);
-                                    "[object HTMLDocument]" === v ? h = !0 : "[object ShadowRoot]" === v ? (h = !0, 
-                                    n = f, l = f.host) : f = f.parentNode;
+                                    "[object HTMLDocument]" === v ? h = !0 : "[object ShadowRoot]" === v ? (h = !0,
+                                        n = f, l = f.host) : f = f.parentNode;
                                 }
                             }
                             if (!u) throw new Error("No selector / element found.");
@@ -434,9 +434,9 @@
                             };
                             if (d.sibling) {
                                 var E = d.sibling, C = M, L = E.minDate || C.minDate, Y = E.maxDate || C.maxDate;
-                                C.sibling = E, E.sibling = C, E.minDate = L, E.maxDate = Y, C.minDate = L, C.maxDate = Y, 
-                                E.originalMinDate = L, E.originalMaxDate = Y, C.originalMinDate = L, C.originalMaxDate = Y, 
-                                E.getRange = A, C.getRange = A;
+                                C.sibling = E, E.sibling = C, E.minDate = L, E.maxDate = Y, C.minDate = L, C.maxDate = Y,
+                                    E.originalMinDate = L, E.originalMaxDate = Y, C.originalMinDate = L, C.originalMaxDate = Y,
+                                    E.getRange = A, C.getRange = A;
                             }
                             d.dateSelected && p(u, M);
                             var j = getComputedStyle(w).position;
@@ -660,7 +660,7 @@
                     }), (function(o) {
                         !function(n, t, e, i) {
                             var o = O(t);
-                            rn(t, e, i), N(t, e.class_error), w(t, p), C(e.callback_error, t, i), e.restore_on_error && q(t, B), 
+                            rn(t, e, i), N(t, e.class_error), w(t, p), C(e.callback_error, t, i), e.restore_on_error && q(t, B),
                             o || nn(e, i);
                         }(0, n, t, e), an(i);
                     }));
@@ -676,8 +676,8 @@
                             });
                         }(n), function(n, t, e) {
                             var i = y(n, t.data_bg), o = y(n, t.data_bg_hidpi), r = a && o ? o : i;
-                            r && (n.style.backgroundImage = 'url("'.concat(r, '")'), z(n).setAttribute(u, r), 
-                            Q(n, t, e));
+                            r && (n.style.backgroundImage = 'url("'.concat(r, '")'), z(n).setAttribute(u, r),
+                                Q(n, t, e));
                         }(n, t, e), function(n, t, e) {
                             var i = y(n, t.data_bg_multi), o = y(n, t.data_bg_multi_hidpi), r = a && o ? o : i;
                             r && (n.style.backgroundImage = r, K(n, t, e));
@@ -727,8 +727,8 @@
                             }
                         }(n);
                     })(n), function(n, t) {
-                        L(n) || O(n) || (M(n, t.class_entered), M(n, t.class_exited), M(n, t.class_applied), 
-                        M(n, t.class_loading), M(n, t.class_loaded), M(n, t.class_error));
+                        L(n) || O(n) || (M(n, t.class_entered), M(n, t.class_exited), M(n, t.class_applied),
+                            M(n, t.class_loading), M(n, t.class_loaded), M(n, t.class_error));
                     }(n, t), A(n), U(n);
                 }, _n = [ "IMG", "IFRAME", "VIDEO" ], gn = function(n) {
                     return n.use_native && "loading" in HTMLImageElement.prototype;
@@ -810,11 +810,11 @@
                         }(t, o)) : this.loadAll(r);
                     },
                     destroy: function() {
-                        this._observer && this._observer.disconnect(), t && window.removeEventListener("online", this._onlineHandler), 
-                        mn(this._settings).forEach((function(n) {
-                            U(n);
-                        })), delete this._observer, delete this._settings, delete this._onlineHandler, delete this.loadingCount, 
-                        delete this.toLoadCount;
+                        this._observer && this._observer.disconnect(), t && window.removeEventListener("online", this._onlineHandler),
+                            mn(this._settings).forEach((function(n) {
+                                U(n);
+                            })), delete this._observer, delete this._settings, delete this._onlineHandler, delete this.loadingCount,
+                            delete this.toLoadCount;
                     },
                     loadAll: function(n) {
                         var t = this, e = this._settings;
@@ -1563,9 +1563,9 @@
                     };
                     var g = c.x - b.x;
                     h = c.y - b.y;
-                    var i = Math.atan2(h, g), w = i - Math.PI / 2, k = (w = Math.abs(a.width() * Math.sin(w)) + Math.abs(a.height() * Math.cos(w)), 
-                    g = Math.sqrt(h * h + g * g), c = j(c.x < b.x ? a.width() : 0, c.y < b.y ? a.height() : 0), 
-                    Math.tan(i));
+                    var i = Math.atan2(h, g), w = i - Math.PI / 2, k = (w = Math.abs(a.width() * Math.sin(w)) + Math.abs(a.height() * Math.cos(w)),
+                        g = Math.sqrt(h * h + g * g), c = j(c.x < b.x ? a.width() : 0, c.y < b.y ? a.height() : 0),
+                        Math.tan(i));
                     h = -1 / k;
                     k = (h * c.x - c.y - k * b.x + b.y) / (h - k);
                     c = h * k - h * c.x + c.y;
@@ -1679,12 +1679,12 @@
                     if (b) {
                         if (b == h) d = !0; else if (b > h) throw p('Page "' + b + '" cannot be inserted');
                     } else b = h, d = !0;
-                    1 <= b && b <= h && (c = "double" == e.display ? b % 2 ? " odd" : " even" : "", 
-                    e.done && this.turn("stop"), b in e.pageObjs && g._movePages.call(this, b, 1), d && (e.totalPages = h), 
-                    e.pageObjs[b] = f(a).css({
-                        float: "left"
-                    }).addClass("page p" + b + c), -1 != navigator.userAgent.indexOf("MSIE 9.0") && e.pageObjs[b].hasClass("hard") && e.pageObjs[b].removeClass("hard"), 
-                    g._addPage.call(this, b), g._removeFromDOM.call(this));
+                    1 <= b && b <= h && (c = "double" == e.display ? b % 2 ? " odd" : " even" : "",
+                    e.done && this.turn("stop"), b in e.pageObjs && g._movePages.call(this, b, 1), d && (e.totalPages = h),
+                        e.pageObjs[b] = f(a).css({
+                            float: "left"
+                        }).addClass("page p" + b + c), -1 != navigator.userAgent.indexOf("MSIE 9.0") && e.pageObjs[b].hasClass("hard") && e.pageObjs[b].removeClass("hard"),
+                        g._addPage.call(this, b), g._removeFromDOM.call(this));
                     return this;
                 },
                 _addPage: function(a) {
@@ -1716,11 +1716,11 @@
                 },
                 center: function(a) {
                     var b = this.data(), c = f(this).turn("size"), d = 0;
-                    b.noCenter || ("double" == b.display && (a = this.turn("view", a || b.tpage || b.page), 
-                    "ltr" == b.direction ? a[0] ? a[1] || (d += c.width / 4) : d -= c.width / 4 : a[0] ? a[1] || (d -= c.width / 4) : d += c.width / 4), 
-                    f(this).css({
-                        marginLeft: d
-                    }));
+                    b.noCenter || ("double" == b.display && (a = this.turn("view", a || b.tpage || b.page),
+                        "ltr" == b.direction ? a[0] ? a[1] || (d += c.width / 4) : d -= c.width / 4 : a[0] ? a[1] || (d -= c.width / 4) : d += c.width / 4),
+                        f(this).css({
+                            marginLeft: d
+                        }));
                     return this;
                 },
                 destroy: function() {
@@ -1753,24 +1753,24 @@
                         f(this).turn("stop").turn("size", h, c);
                         b.opts.autoCenter && this.turn("center");
                         g._updateShadow.call(this);
-                        for (a = 0; a < d.length; a++) d[a] && b.pageZoom[d[a]] != b.zoom && (this.trigger("zoomed", [ d[a], d, b.pageZoom[d[a]], b.zoom ]), 
-                        b.pageZoom[d[a]] = b.zoom);
+                        for (a = 0; a < d.length; a++) d[a] && b.pageZoom[d[a]] != b.zoom && (this.trigger("zoomed", [ d[a], d, b.pageZoom[d[a]], b.zoom ]),
+                            b.pageZoom[d[a]] = b.zoom);
                         return this;
                     }
                     return b.zoom;
                 },
                 _pageSize: function(a, b) {
                     var c = this.data(), d = {};
-                    if ("single" == c.display) d.width = this.width(), d.height = this.height(), b && (d.top = 0, 
-                    d.left = 0, d.right = "auto"); else {
+                    if ("single" == c.display) d.width = this.width(), d.height = this.height(), b && (d.top = 0,
+                        d.left = 0, d.right = "auto"); else {
                         var e = this.width() / 2, h = this.height();
-                        c.pageObjs[a].hasClass("own-size") ? (d.width = c.pageObjs[a].width(), d.height = c.pageObjs[a].height()) : (d.width = e, 
-                        d.height = h);
+                        c.pageObjs[a].hasClass("own-size") ? (d.width = c.pageObjs[a].width(), d.height = c.pageObjs[a].height()) : (d.width = e,
+                            d.height = h);
                         if (b) {
                             var f = a % 2;
                             d.top = (h - d.height) / 2;
-                            "ltr" == c.direction ? (d[f ? "right" : "left"] = e - d.width, d[f ? "left" : "right"] = "auto") : (d[f ? "left" : "right"] = e - d.width, 
-                            d[f ? "right" : "left"] = "auto");
+                            "ltr" == c.direction ? (d[f ? "right" : "left"] = e - d.width, d[f ? "left" : "right"] = "auto") : (d[f ? "left" : "right"] = e - d.width,
+                                d[f ? "right" : "left"] = "auto");
                         }
                     }
                     return d;
@@ -1788,6 +1788,7 @@
                         b.pageZoom[a] = b.zoom;
                     }
                     return b.pages[a];
+
                 },
                 _makeRange: function() {
                     var a, b;
@@ -1802,8 +1803,8 @@
                     d = g._view.call(this, a);
                     if (1 > a || a > e.totalPages) throw p('"' + a + '" is not a valid page');
                     d[1] = d[1] || d[0];
-                    1 <= d[0] && d[1] <= e.totalPages ? (a = Math.floor(2), e.totalPages - d[1] > d[0] ? (b = Math.min(d[0] - 1, a), 
-                    c = 2 * a - b) : (c = Math.min(e.totalPages - d[1], a), b = 2 * a - c)) : c = b = 5;
+                    1 <= d[0] && d[1] <= e.totalPages ? (a = Math.floor(2), e.totalPages - d[1] > d[0] ? (b = Math.min(d[0] - 1, a),
+                        c = 2 * a - b) : (c = Math.min(e.totalPages - d[1], a), b = 2 * a - c)) : c = b = 5;
                     return [ Math.max(1, d[0] - b), Math.min(e.totalPages, d[1] + c) ];
                 },
                 _necessPage: function(a) {
@@ -1838,8 +1839,8 @@
                         b.pageObjs[a] && (this.turn("stop"), g._removePageFromDOM.call(this, a), delete b.pageObjs[a]);
                         g._movePages.call(this, a, -1);
                         b.totalPages -= 1;
-                        b.page > b.totalPages ? (b.page = null, g._fitPage.call(this, b.totalPages)) : (g._makeRange.call(this), 
-                        this.turn("update"));
+                        b.page > b.totalPages ? (b.page = null, g._fitPage.call(this, b.totalPages)) : (g._makeRange.call(this),
+                            this.turn("update"));
                     }
                     return this;
                 },
@@ -1847,12 +1848,12 @@
                     var c, d = this, e = this.data(), h = "single" == e.display, f = function(a) {
                         var c = a + b, f = c % 2, i = f ? " odd " : " even ";
                         e.pageObjs[a] && (e.pageObjs[c] = e.pageObjs[a].removeClass("p" + a + " odd even").addClass("p" + c + i));
-                        e.pagePlace[a] && e.pageWrap[a] && (e.pagePlace[c] = c, e.pageWrap[c] = e.pageObjs[c].hasClass("fixed") ? e.pageWrap[a].attr("page", c) : e.pageWrap[a].css(g._pageSize.call(d, c, !0)).attr("page", c), 
+                        e.pagePlace[a] && e.pageWrap[a] && (e.pagePlace[c] = c, e.pageWrap[c] = e.pageObjs[c].hasClass("fixed") ? e.pageWrap[a].attr("page", c) : e.pageWrap[a].css(g._pageSize.call(d, c, !0)).attr("page", c),
                         e.pages[a] && (e.pages[c] = e.pages[a].flip("options", {
                             page: c,
                             next: h || f ? c + 1 : c - 1
-                        })), b && (delete e.pages[a], delete e.pagePlace[a], delete e.pageZoom[a], delete e.pageObjs[a], 
-                        delete e.pageWrap[a]));
+                        })), b && (delete e.pages[a], delete e.pagePlace[a], delete e.pageZoom[a], delete e.pageObjs[a],
+                            delete e.pageWrap[a]));
                     };
                     if (0 < b) for (c = e.totalPages; c >= a; c--) f(c); else for (c = a; c <= e.totalPages; c++) f(c);
                 },
@@ -1861,22 +1862,22 @@
                     if (void 0 === a) return c;
                     if (-1 == f.inArray(a, U)) throw p('"' + a + '" is not a value for display');
                     switch (a) {
-                      case "single":
-                        b.pageObjs[0] || (this.turn("stop").css({
-                            overflow: "hidden"
-                        }), b.pageObjs[0] = f("<div />", {
-                            class: "page p-temporal"
-                        }).css({
-                            width: this.width(),
-                            height: this.height()
-                        }).appendTo(this));
-                        this.addClass("shadow");
-                        break;
+                        case "single":
+                            b.pageObjs[0] || (this.turn("stop").css({
+                                overflow: "hidden"
+                            }), b.pageObjs[0] = f("<div />", {
+                                class: "page p-temporal"
+                            }).css({
+                                width: this.width(),
+                                height: this.height()
+                            }).appendTo(this));
+                            this.addClass("shadow");
+                            break;
 
-                      case "double":
-                        b.pageObjs[0] && (this.turn("stop").css({
-                            overflow: ""
-                        }), b.pageObjs[0].remove(), delete b.pageObjs[0]), this.removeClass("shadow");
+                        case "double":
+                            b.pageObjs[0] && (this.turn("stop").css({
+                                overflow: ""
+                            }), b.pageObjs[0].remove(), delete b.pageObjs[0]), this.removeClass("shadow");
                     }
                     b.display = a;
                     c && (a = this.turn("size"), g._movePages.call(this, 1, 0), this.turn("size", a.width, a.height).turn("update"));
@@ -1951,8 +1952,8 @@
                 },
                 _removeMv: function(a) {
                     var b, c = this.data();
-                    for (b = 0; b < c.pageMv.length; b++) if (c.pageMv[b] == a) return c.pageMv.splice(b, 1), 
-                    !0;
+                    for (b = 0; b < c.pageMv.length; b++) if (c.pageMv[b] == a) return c.pageMv.splice(b, 1),
+                        !0;
                     return !1;
                 },
                 _addMv: function(a) {
@@ -1974,8 +1975,8 @@
                     if (this.turn("animating")) {
                         var c, d, e, h = this.data();
                         h.tpage && (h.page = h.tpage, delete h.tpage);
-                        for (c = 0; c < h.pageMv.length; c++) h.pageMv[c] && h.pageMv[c] !== a && (e = h.pages[h.pageMv[c]], 
-                        d = e.data().f.opts, e.flip("hideFoldedPage", b), b || i._moveFoldingPage.call(e, !1), 
+                        for (c = 0; c < h.pageMv.length; c++) h.pageMv[c] && h.pageMv[c] !== a && (e = h.pages[h.pageMv[c]],
+                            d = e.data().f.opts, e.flip("hideFoldedPage", b), b || i._moveFoldingPage.call(e, !1),
                         d.force && (d.next = 0 === d.page % 2 ? d.page - 1 : d.page + 1, delete d.force));
                     }
                     this.turn("update");
@@ -2005,8 +2006,8 @@
                     if (b.pageObjs[a]) {
                         b.page = a;
                         this.turn("stop");
-                        for (var d = 0; d < c.length; d++) c[d] && b.pageZoom[c[d]] != b.zoom && (this.trigger("zoomed", [ c[d], c, b.pageZoom[c[d]], b.zoom ]), 
-                        b.pageZoom[c[d]] = b.zoom);
+                        for (var d = 0; d < c.length; d++) c[d] && b.pageZoom[c[d]] != b.zoom && (this.trigger("zoomed", [ c[d], c, b.pageZoom[c[d]], b.zoom ]),
+                            b.pageZoom[c[d]] = b.zoom);
                         g._removeFromDOM.call(this);
                         g._makeRange.call(this);
                         g._updateShadow.call(this);
@@ -2026,14 +2027,14 @@
                         -1 != f.inArray(1, i) && this.trigger("first");
                         -1 != f.inArray(d.totalPages, i) && this.trigger("last");
                     }
-                    "single" == d.display ? (b = h[0], c = i[0]) : h[1] && a > h[1] ? (b = h[1], c = i[0]) : h[0] && a < h[0] && (b = h[0], 
-                    c = i[1]);
+                    "single" == d.display ? (b = h[0], c = i[0]) : h[1] && a > h[1] ? (b = h[1], c = i[0]) : h[0] && a < h[0] && (b = h[0],
+                        c = i[1]);
                     e = d.opts.turnCorners.split(",");
                     h = d.pages[b].data().f;
                     i = h.opts;
                     j = h.point;
                     g._missing.call(this, a);
-                    d.pageObjs[a] && (this.turn("stop"), d.page = a, g._makeRange.call(this), d.tpage = c, 
+                    d.pageObjs[a] && (this.turn("stop"), d.page = a, g._makeRange.call(this), d.tpage = c,
                     i.next != c && (i.next = c, i.force = !0), this.turn("update"), h.point = j, "hard" == h.effect ? "ltr" == d.direction ? d.pages[b].flip("turnPage", a > b ? "r" : "l") : d.pages[b].flip("turnPage", a > b ? "l" : "r") : "ltr" == d.direction ? d.pages[b].flip("turnPage", e[a > b ? 1 : 0]) : d.pages[b].flip("turnPage", e[a > b ? 0 : 1]));
                 },
                 page: function(a) {
@@ -2041,8 +2042,8 @@
                     if (void 0 === a) return b.page;
                     if (!b.disabled && !b.destroying) {
                         a = parseInt(a, 10);
-                        if (0 < a && a <= b.totalPages) return a != b.page && (!b.done || -1 != f.inArray(a, this.turn("view")) ? g._fitPage.call(this, a) : g._turnPage.call(this, a)), 
-                        this;
+                        if (0 < a && a <= b.totalPages) return a != b.page && (!b.done || -1 != f.inArray(a, this.turn("view")) ? g._fitPage.call(this, a) : g._turnPage.call(this, a)),
+                            this;
                         throw p("The page " + a + " does not exist");
                     }
                 },
@@ -2055,7 +2056,7 @@
                 peel: function(a, b) {
                     var c = this.data(), d = this.turn("view");
                     b = void 0 === b ? !0 : !0 === b;
-                    !1 === a ? this.turn("stop", null, b) : "single" == c.display ? c.pages[c.page].flip("peel", a, b) : (d = "ltr" == c.direction ? -1 != a.indexOf("l") ? d[0] : d[1] : -1 != a.indexOf("l") ? d[1] : d[0], 
+                    !1 === a ? this.turn("stop", null, b) : "single" == c.display ? c.pages[c.page].flip("peel", a, b) : (d = "ltr" == c.direction ? -1 != a.indexOf("l") ? d[0] : d[1] : -1 != a.indexOf("l") ? d[1] : d[0],
                     c.pages[d] && c.pages[d].flip("peel", a, b));
                     return this;
                 },
@@ -2066,9 +2067,9 @@
                 },
                 _eventStart: function(a, b, c) {
                     var d = b.turn.data(), e = d.pageZoom[b.page];
-                    a.isDefaultPrevented() || (e && e != d.zoom && (b.turn.trigger("zoomed", [ b.page, b.turn.turn("view", b.page), e, d.zoom ]), 
-                    d.pageZoom[b.page] = d.zoom), "single" == d.display && c && ("l" == c.charAt(1) && "ltr" == d.direction || "r" == c.charAt(1) && "rtl" == d.direction ? (b.next = b.next < b.page ? b.next : b.page - 1, 
-                    b.force = !0) : b.next = b.next > b.page ? b.next : b.page + 1), g._addMotionPage.call(a.target));
+                    a.isDefaultPrevented() || (e && e != d.zoom && (b.turn.trigger("zoomed", [ b.page, b.turn.turn("view", b.page), e, d.zoom ]),
+                        d.pageZoom[b.page] = d.zoom), "single" == d.display && c && ("l" == c.charAt(1) && "ltr" == d.direction || "r" == c.charAt(1) && "rtl" == d.direction ? (b.next = b.next < b.page ? b.next : b.page - 1,
+                        b.force = !0) : b.next = b.next > b.page ? b.next : b.page + 1), g._addMotionPage.call(a.target));
                     g._updateShadow.call(b.turn);
                 },
                 _eventEnd: function(a, b, c) {
@@ -2124,24 +2125,25 @@
                         a[0] && (j.pageV[a[0]] = !0);
                         a[1] && (j.pageV[a[1]] = !0);
                     };
-                    for (b = 0; b <= g; b++) c = a[b], d = f.pages[c].data().f.opts.next, e = f.pagePlace[c], 
-                    k(c), k(d), c = f.pagePlace[d] == d ? d : c, j.pageZ[c] = f.totalPages - Math.abs(i - c), 
-                    j.partZ[e] = 2 * f.totalPages - g + b;
+                    for (b = 0; b <= g; b++) c = a[b], d = f.pages[c].data().f.opts.next, e = f.pagePlace[c],
+                        k(c), k(d), c = f.pagePlace[d] == d ? d : c, j.pageZ[c] = f.totalPages - Math.abs(i - c),
+                        j.partZ[e] = 2 * f.totalPages - g + b;
                     return j;
                 },
                 update: function() {
                     var a, b = this.data();
                     if (this.turn("animating") && 0 !== b.pageMv[0]) {
                         var c, d = this.turn("calculateZ", b.pageMv), e = this.turn("corner"), h = this.turn("view"), i = this.turn("view", b.tpage);
-                        for (a in b.pageWrap) if (n(a, b.pageWrap) && (c = b.pageObjs[a].hasClass("fixed"), 
-                        b.pageWrap[a].css({
-                            display: d.pageV[a] || c ? "" : "none",
-                            zIndex: (b.pageObjs[a].hasClass("hard") ? d.partZ[a] : d.pageZ[a]) || (c ? -1 : 0)
-                        }), c = b.pages[a])) c.flip("z", d.partZ[a] || null), d.pageV[a] && c.flip("resize"), 
-                        b.tpage ? c.flip("hover", !1).flip("disable", -1 == f.inArray(parseInt(a, 10), b.pageMv) && a != i[0] && a != i[1]) : c.flip("hover", !1 === e).flip("disable", a != h[0] && a != h[1]);
-                    } else for (a in b.pageWrap) n(a, b.pageWrap) && (d = g._setPageLoc.call(this, a), 
+                        for (a in b.pageWrap) if (n(a, b.pageWrap) && (c = b.pageObjs[a].hasClass("fixed"),
+                            b.pageWrap[a].css({
+                                display: d.pageV[a] || c ? "" : "none",
+                                zIndex: (b.pageObjs[a].hasClass("hard") ? d.partZ[a] : d.pageZ[a]) || (c ? -1 : 0)
+                            }), c = b.pages[a])) c.flip("z", d.partZ[a] || null), d.pageV[a] && c.flip("resize"),
+                            b.tpage ? c.flip("hover", !1).flip("disable", -1 == f.inArray(parseInt(a, 10), b.pageMv) && a != i[0] && a != i[1]) : c.flip("hover", !1 === e).flip("disable", a != h[0] && a != h[1]);
+                    } else for (a in b.pageWrap) n(a, b.pageWrap) && (d = g._setPageLoc.call(this, a),
                     b.pages[a] && b.pages[a].flip("disable", b.disabled || 1 != d).flip("hover", !0).flip("z", null));
                     return this;
+
                 },
                 _updateShadow: function() {
                     var a, b, c = this.data(), d = this.width(), e = this.height(), h = "single" == c.display ? d : d / 2;
@@ -2150,59 +2152,59 @@
                         class: "shadow",
                         css: l(0, 0, 0).css
                     }).appendTo(this));
-                    for (var i = 0; i < c.pageMv.length && a[0] && a[1]; i++) a = this.turn("view", c.pages[c.pageMv[i]].data().f.opts.next), 
-                    b = this.turn("view", c.pageMv[i]), a[0] = a[0] && b[0], a[1] = a[1] && b[1];
+                    for (var i = 0; i < c.pageMv.length && a[0] && a[1]; i++) a = this.turn("view", c.pages[c.pageMv[i]].data().f.opts.next),
+                        b = this.turn("view", c.pageMv[i]), a[0] = a[0] && b[0], a[1] = a[1] && b[1];
                     switch (a[0] ? a[1] ? 3 : "ltr" == c.direction ? 2 : 1 : "ltr" == c.direction ? 1 : 2) {
-                      case 1:
-                        c.shadow.css({
-                            width: h,
-                            height: e,
-                            top: 0,
-                            left: h
-                        });
-                        break;
+                        case 1:
+                            c.shadow.css({
+                                width: h,
+                                height: e,
+                                top: 0,
+                                left: h
+                            });
+                            break;
 
-                      case 2:
-                        c.shadow.css({
-                            width: h,
-                            height: e,
-                            top: 0,
-                            left: 0
-                        });
-                        break;
+                        case 2:
+                            c.shadow.css({
+                                width: h,
+                                height: e,
+                                top: 0,
+                                left: 0
+                            });
+                            break;
 
-                      case 3:
-                        c.shadow.css({
-                            width: d,
-                            height: e,
-                            top: 0,
-                            left: 0
-                        });
+                        case 3:
+                            c.shadow.css({
+                                width: d,
+                                height: e,
+                                top: 0,
+                                left: 0
+                            });
                     }
                 },
                 _setPageLoc: function(a) {
                     var b = this.data(), c = this.turn("view"), d = 0;
                     if (a == c[0] || a == c[1]) d = 1; else if ("single" == b.display && a == c[0] + 1 || "double" == b.display && a == c[0] - 2 || a == c[1] + 2) d = 2;
                     if (!this.turn("animating")) switch (d) {
-                      case 1:
-                        b.pageWrap[a].css({
-                            zIndex: b.totalPages,
-                            display: ""
-                        });
-                        break;
+                        case 1:
+                            b.pageWrap[a].css({
+                                zIndex: b.totalPages,
+                                display: ""
+                            });
+                            break;
 
-                      case 2:
-                        b.pageWrap[a].css({
-                            zIndex: b.totalPages - 1,
-                            display: ""
-                        });
-                        break;
+                        case 2:
+                            b.pageWrap[a].css({
+                                zIndex: b.totalPages - 1,
+                                display: ""
+                            });
+                            break;
 
-                      case 0:
-                        b.pageWrap[a].css({
-                            zIndex: 0,
-                            display: b.pageObjs[a].hasClass("fixed") ? "" : "none"
-                        });
+                        case 0:
+                            b.pageWrap[a].css({
+                                zIndex: 0,
+                                display: b.pageObjs[a].hasClass("fixed") ? "" : "none"
+                            });
                     }
                     return d;
                 },
@@ -2266,13 +2268,13 @@
                     if (0 >= a.x || 0 >= a.y || a.x >= c || a.y >= d) return !1;
                     var h = i._cAllowed.call(this);
                     switch (b.effect) {
-                      case "hard":
-                        if (a.x > c - e) a.corner = "r"; else if (a.x < e) a.corner = "l"; else return !1;
-                        break;
+                        case "hard":
+                            if (a.x > c - e) a.corner = "r"; else if (a.x < e) a.corner = "l"; else return !1;
+                            break;
 
-                      case "sheet":
-                        if (a.y < e) a.corner += "t"; else if (a.y >= d - e) a.corner += "b"; else return !1;
-                        if (a.x <= e) a.corner += "l"; else if (a.x >= c - e) a.corner += "r"; else return !1;
+                        case "sheet":
+                            if (a.y < e) a.corner += "t"; else if (a.y >= d - e) a.corner += "b"; else return !1;
+                            if (a.x <= e) a.corner += "l"; else if (a.x >= c - e) a.corner += "r"; else return !1;
                     }
                     return !a.corner || -1 == f.inArray(a.corner, h) ? !1 : a;
                 },
@@ -2287,44 +2289,44 @@
                 _c: function(a, b) {
                     b = b || 0;
                     switch (a) {
-                      case "tl":
-                        return j(b, b);
+                        case "tl":
+                            return j(b, b);
 
-                      case "tr":
-                        return j(this.width() - b, b);
+                        case "tr":
+                            return j(this.width() - b, b);
 
-                      case "bl":
-                        return j(b, this.height() - b);
+                        case "bl":
+                            return j(b, this.height() - b);
 
-                      case "br":
-                        return j(this.width() - b, this.height() - b);
+                        case "br":
+                            return j(this.width() - b, this.height() - b);
 
-                      case "l":
-                        return j(b, 0);
+                        case "l":
+                            return j(b, 0);
 
-                      case "r":
-                        return j(this.width() - b, 0);
+                        case "r":
+                            return j(this.width() - b, 0);
                     }
                 },
                 _c2: function(a) {
                     switch (a) {
-                      case "tl":
-                        return j(2 * this.width(), 0);
+                        case "tl":
+                            return j(2 * this.width(), 0);
 
-                      case "tr":
-                        return j(-this.width(), 0);
+                        case "tr":
+                            return j(-this.width(), 0);
 
-                      case "bl":
-                        return j(2 * this.width(), this.height());
+                        case "bl":
+                            return j(2 * this.width(), this.height());
 
-                      case "br":
-                        return j(-this.width(), this.height());
+                        case "br":
+                            return j(-this.width(), this.height());
 
-                      case "l":
-                        return j(2 * this.width(), 0);
+                        case "l":
+                            return j(2 * this.width(), 0);
 
-                      case "r":
-                        return j(-this.width(), 0);
+                        case "r":
+                            return j(-this.width(), 0);
                     }
                 },
                 _foldingPage: function() {
@@ -2349,220 +2351,223 @@
                 resize: function(a) {
                     var b = this.data().f, c = b.opts.turn.data(), d = this.width(), e = this.height();
                     switch (b.effect) {
-                      case "hard":
-                        a && (b.wrapper.css({
-                            width: d,
-                            height: e
-                        }), b.fpage.css({
-                            width: d,
-                            height: e
-                        }), c.opts.gradients && (b.ashadow.css({
-                            width: d,
-                            height: e
-                        }), b.bshadow.css({
-                            width: d,
-                            height: e
-                        })));
-                        break;
+                        case "hard":
+                            a && (b.wrapper.css({
+                                width: d,
+                                height: e
+                            }), b.fpage.css({
+                                width: d,
+                                height: e
+                            }), c.opts.gradients && (b.ashadow.css({
+                                width: d,
+                                height: e
+                            }), b.bshadow.css({
+                                width: d,
+                                height: e
+                            })));
+                            break;
 
-                      case "sheet":
-                        a && (a = Math.round(Math.sqrt(Math.pow(d, 2) + Math.pow(e, 2))), b.wrapper.css({
-                            width: a,
-                            height: a
-                        }), b.fwrapper.css({
-                            width: a,
-                            height: a
-                        }).children(":first-child").css({
-                            width: d,
-                            height: e
-                        }), b.fpage.css({
-                            width: d,
-                            height: e
-                        }), c.opts.gradients && b.ashadow.css({
-                            width: d,
-                            height: e
-                        }), i._backGradient.call(this) && b.bshadow.css({
-                            width: d,
-                            height: e
-                        })), b.parent.is(":visible") && (c = C(b.parent[0]), b.fwrapper.css({
-                            top: c.top,
-                            left: c.left
-                        }), c = C(b.opts.turn[0]), b.fparent.css({
-                            top: -c.top,
-                            left: -c.left
-                        })), this.flip("z", b.opts["z-index"]);
+                        case "sheet":
+                            a && (a = Math.round(Math.sqrt(Math.pow(d, 2) + Math.pow(e, 2))), b.wrapper.css({
+                                width: a,
+                                height: a
+                            }), b.fwrapper.css({
+                                width: a,
+                                height: a
+                            }).children(":first-child").css({
+                                width: d,
+                                height: e
+                            }), b.fpage.css({
+                                width: d,
+                                height: e
+                            }), c.opts.gradients && b.ashadow.css({
+                                width: d,
+                                height: e
+                            }), i._backGradient.call(this) && b.bshadow.css({
+                                width: d,
+                                height: e
+                            })), b.parent.is(":visible") && (c = C(b.parent[0]), b.fwrapper.css({
+                                top: c.top,
+                                left: c.left
+                            }), c = C(b.opts.turn[0]), b.fparent.css({
+                                top: -c.top,
+                                left: -c.left
+                            })), this.flip("z", b.opts["z-index"]);
                     }
                 },
                 _addPageWrapper: function() {
                     var a = this.data().f, b = a.opts.turn.data(), c = this.parent();
                     a.parent = c;
                     if (!a.wrapper) switch (a.effect) {
-                      case "hard":
-                        var d = {};
-                        d[v + "transform-style"] = "preserve-3d";
-                        d[v + "backface-visibility"] = "hidden";
-                        a.wrapper = f("<div/>", l(0, 0, 2)).css(d).appendTo(c).prepend(this);
-                        a.fpage = f("<div/>", l(0, 0, 1)).css(d).appendTo(c);
-                        b.opts.gradients && (a.ashadow = f("<div/>", l(0, 0, 0)).hide().appendTo(c), a.bshadow = f("<div/>", l(0, 0, 0)));
-                        break;
+                        case "hard":
+                            var d = {};
+                            d[v + "transform-style"] = "preserve-3d";
+                            d[v + "backface-visibility"] = "hidden";
+                            a.wrapper = f("<div/>", l(0, 0, 2)).css(d).appendTo(c).prepend(this);
+                            a.fpage = f("<div/>", l(0, 0, 1)).css(d).appendTo(c);
+                            b.opts.gradients && (a.ashadow = f("<div/>", l(0, 0, 0)).hide().appendTo(c), a.bshadow = f("<div/>", l(0, 0, 0)));
+                            break;
 
-                      case "sheet":
-                        d = this.width();
-                        var e = this.height();
-                        Math.round(Math.sqrt(Math.pow(d, 2) + Math.pow(e, 2)));
-                        a.fparent = a.opts.turn.data().fparent;
-                        a.fparent || (d = f("<div/>", {
-                            css: {
-                                "pointer-events": "none"
-                            }
-                        }).hide(), d.data().flips = 0, d.css(l(0, 0, "auto", "visible").css).appendTo(a.opts.turn), 
-                        a.opts.turn.data().fparent = d, a.fparent = d);
-                        this.css({
-                            position: "absolute",
-                            top: 0,
-                            left: 0,
-                            bottom: "auto",
-                            right: "auto"
-                        });
-                        a.wrapper = f("<div/>", l(0, 0, this.css("z-index"))).appendTo(c).prepend(this);
-                        a.fwrapper = f("<div/>", l(c.offset().top, c.offset().left)).hide().appendTo(a.fparent);
-                        a.fpage = f("<div/>", l(0, 0, 0, "visible")).css({
-                            cursor: "default"
-                        }).appendTo(a.fwrapper);
-                        b.opts.gradients && (a.ashadow = f("<div/>", l(0, 0, 1)).appendTo(a.fpage));
-                        i.setData.call(this, a);
+                        case "sheet":
+                            d = this.width();
+                            var e = this.height();
+                            Math.round(Math.sqrt(Math.pow(d, 2) + Math.pow(e, 2)));
+                            a.fparent = a.opts.turn.data().fparent;
+                            a.fparent || (d = f("<div/>", {
+                                css: {
+                                    "pointer-events": "none"
+                                }
+                            }).hide(), d.data().flips = 0, d.css(l(0, 0, "auto", "visible").css).appendTo(a.opts.turn),
+                                a.opts.turn.data().fparent = d, a.fparent = d);
+                            this.css({
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                bottom: "auto",
+                                right: "auto"
+                            });
+                            a.wrapper = f("<div/>", l(0, 0, this.css("z-index"))).appendTo(c).prepend(this);
+                            a.fwrapper = f("<div/>", l(c.offset().top, c.offset().left)).hide().appendTo(a.fparent);
+                            a.fpage = f("<div/>", l(0, 0, 0, "visible")).css({
+                                cursor: "default"
+                            }).appendTo(a.fwrapper);
+                            b.opts.gradients && (a.ashadow = f("<div/>", l(0, 0, 1)).appendTo(a.fpage));
+                            i.setData.call(this, a);
                     }
                     i.resize.call(this, !0);
                 },
                 _fold: function(a) {
                     var b = this.data().f, c = b.opts.turn.data(), d = i._c.call(this, a.corner), e = this.width(), h = this.height();
                     switch (b.effect) {
-                      case "hard":
-                        a.x = "l" == a.corner ? Math.min(Math.max(a.x, 0), 2 * e) : Math.max(Math.min(a.x, e), -e);
-                        var f, g, r, w, k, n = c.totalPages, l = b.opts["z-index"] || n, p = {
-                            overflow: "visible"
-                        }, o = d.x ? (d.x - a.x) / e : a.x / e, q = 90 * o, s = 90 > q;
-                        switch (a.corner) {
-                          case "l":
-                            w = "0% 50%";
-                            k = "100% 50%";
-                            s ? (f = 0, g = 0 < b.opts.next - 1, r = 1) : (f = "100%", g = b.opts.page + 1 < n, 
-                            r = 0);
+                        case "hard":
+                            a.x = "l" == a.corner ? Math.min(Math.max(a.x, 0), 2 * e) : Math.max(Math.min(a.x, e), -e);
+                            var f, g, r, w, k, n = c.totalPages, l = b.opts["z-index"] || n, p = {
+                                overflow: "visible"
+                            }, o = d.x ? (d.x - a.x) / e : a.x / e, q = 90 * o, s = 90 > q;
+                            switch (a.corner) {
+                                case "l":
+                                    w = "0% 50%";
+                                    k = "100% 50%";
+                                    s ? (f = 0, g = 0 < b.opts.next - 1, r = 1) : (f = "100%", g = b.opts.page + 1 < n,
+                                        r = 0);
+                                    break;
+
+                                case "r":
+                                    w = "100% 50%", k = "0% 50%", q = -q, e = -e, s ? (f = 0, g = b.opts.next + 1 < n,
+                                        r = 0) : (f = "-100%", g = 1 != b.opts.page, r = 1);
+                            }
+                            p[v + "perspective-origin"] = k;
+                            b.wrapper.transform("rotateY(" + q + "deg)translate3d(0px, 0px, " + (this.attr("depth") || 0) + "px)", k);
+                            b.fpage.transform("translateX(" + e + "px) rotateY(" + (180 + q) + "deg)", w);
+                            b.parent.css(p);
+                            s ? (o = -o + 1, b.wrapper.css({
+                                zIndex: l + 1
+                            }), b.fpage.css({
+                                zIndex: l
+                            })) : (o -= 1, b.wrapper.css({
+                                zIndex: l
+                            }), b.fpage.css({
+                                zIndex: l + 1
+                            }));
+                            c.opts.gradients && (g ? b.ashadow.css({
+                                display: "",
+                                left: f,
+                                backgroundColor: "rgba(0,0,0," + .5 * o + ")"
+                            }).transform("rotateY(0deg)") : b.ashadow.hide(), b.bshadow.css({
+                                opacity: -o + 1
+                            }), s ? b.bshadow.parent()[0] != b.wrapper[0] && b.bshadow.appendTo(b.wrapper) : b.bshadow.parent()[0] != b.fpage[0] && b.bshadow.appendTo(b.fpage),
+                                O(b.bshadow, j(100 * r, 0), j(100 * (-r + 1), 0), [ [ 0, "rgba(0,0,0,0.3)" ], [ 1, "rgba(0,0,0,0)" ] ], 2));
                             break;
 
-                          case "r":
-                            w = "100% 50%", k = "0% 50%", q = -q, e = -e, s ? (f = 0, g = b.opts.next + 1 < n, 
-                            r = 0) : (f = "-100%", g = 1 != b.opts.page, r = 1);
-                        }
-                        p[v + "perspective-origin"] = k;
-                        b.wrapper.transform("rotateY(" + q + "deg)translate3d(0px, 0px, " + (this.attr("depth") || 0) + "px)", k);
-                        b.fpage.transform("translateX(" + e + "px) rotateY(" + (180 + q) + "deg)", w);
-                        b.parent.css(p);
-                        s ? (o = -o + 1, b.wrapper.css({
-                            zIndex: l + 1
-                        }), b.fpage.css({
-                            zIndex: l
-                        })) : (o -= 1, b.wrapper.css({
-                            zIndex: l
-                        }), b.fpage.css({
-                            zIndex: l + 1
-                        }));
-                        c.opts.gradients && (g ? b.ashadow.css({
-                            display: "",
-                            left: f,
-                            backgroundColor: "rgba(0,0,0," + .5 * o + ")"
-                        }).transform("rotateY(0deg)") : b.ashadow.hide(), b.bshadow.css({
-                            opacity: -o + 1
-                        }), s ? b.bshadow.parent()[0] != b.wrapper[0] && b.bshadow.appendTo(b.wrapper) : b.bshadow.parent()[0] != b.fpage[0] && b.bshadow.appendTo(b.fpage), 
-                        O(b.bshadow, j(100 * r, 0), j(100 * (-r + 1), 0), [ [ 0, "rgba(0,0,0,0.3)" ], [ 1, "rgba(0,0,0,0)" ] ], 2));
-                        break;
+                        case "sheet":
+                            var y, z, A, L, x, M, C, t = this, G = 0, u = j(0, 0), P = j(0, 0), m = j(0, 0), I = i._foldingPage.call(this);
+                            Math.tan(0);
+                            var N = c.opts.acceleration, Q = b.wrapper.height(), D = "t" == a.corner.substr(0, 1), B = "l" == a.corner.substr(1, 1), H = function() {
+                                var b = j(0, 0), f = j(0, 0);
+                                b.x = d.x ? d.x - a.x : a.x;
+                                b.y = T ? d.y ? d.y - a.y : a.y : 0;
+                                f.x = B ? e - b.x / 2 : a.x + b.x / 2;
+                                f.y = b.y / 2;
+                                var g = K - Math.atan2(b.y, b.x), k = g - Math.atan2(f.y, f.x);
+                                k = Math.max(0, Math.sin(k) * Math.sqrt(Math.pow(f.x, 2) + Math.pow(f.y, 2)));
+                                G = 180 * (g / J);
+                                m = j(k * Math.sin(g), k * Math.cos(g));
+                                if (g > K && (m.x += Math.abs(m.y * b.y / b.x), m.y = 0, Math.round(m.x * Math.tan(J - g)) < h)) return a.y = Math.sqrt(Math.pow(h, 2) + 2 * f.x * b.x),
+                                D && (a.y = h - a.y), H();
+                                if (g > K && (b = J - g, f = Q - h / Math.sin(b), u = j(Math.round(f * Math.cos(b)), Math.round(f * Math.sin(b))),
+                                B && (u.x = -u.x), D)) u.y = -u.y;
+                                y = Math.round(m.y / Math.tan(g) + m.x);
+                                b = e - y;
+                                f = b * Math.cos(2 * g);
+                                k = b * Math.sin(2 * g);
+                                P = j(Math.round(B ? b - f : y + f), Math.round(D ? k : h - k));
+                                if (c.opts.gradients && (x = b * Math.sin(g), b = i._c2.call(t, a.corner), b = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2)) / e,
+                                    C = Math.sin(K * (1 < b ? 2 - b : b)), M = Math.min(b, 1), L = 100 < x ? (x - 100) / x : 0,
+                                    z = j(100 * (x * Math.sin(g) / e), 100 * (x * Math.cos(g) / h)), i._backGradient.call(t) && (A = j(100 * (1.2 * x * Math.sin(g) / e), 100 * (1.2 * x * Math.cos(g) / h)),
+                                B || (A.x = 100 - A.x), !D))) A.y = 100 - A.y;
+                                m.x = Math.round(m.x);
+                                m.y = Math.round(m.y);
+                                return !0;
+                            };
+                            f = function(a, d, f, g) {
+                                var k = [ "0", "auto" ], m = (e - Q) * f[0] / 100, l = (h - Q) * f[1] / 100, n = (d = {
+                                    left: k[d[0]],
+                                    top: k[d[1]],
+                                    right: k[d[2]],
+                                    bottom: k[d[3]]
+                                }, k = {}, 90 != g && -90 != g ? B ? -1 : 1 : 0), r = f[0] + "% " + f[1] + "%";
+                                t.css(d).transform(F(g) + E(a.x + n, a.y, N), r);
+                                b.fpage.css(d).transform(F(g) + E(a.x + P.x - u.x - e * f[0] / 100, a.y + P.y - u.y - h * f[1] / 100, N) + F((180 / g - 2) * g), r);
+                                b.wrapper.transform(E(-a.x + m - n, -a.y + l, N) + F(-g), r);
+                                b.fwrapper.transform(E(-a.x + u.x + m, -a.y + u.y + l, N) + F(-g), r);
+                                c.opts.gradients && (f[0] && (z.x = 100 - z.x), f[1] && (z.y = 100 - z.y), k["box-shadow"] = "0 0 20px rgba(0,0,0," + .5 * C + ")",
+                                    I.css(k), O(b.ashadow, j(B ? 100 : 0, D ? 0 : 100), j(z.x, z.y), [ [ L, "rgba(0,0,0,0)" ], [ .8 * (1 - L) + L, "rgba(0,0,0," + .2 * M + ")" ], [ 1, "rgba(255,255,255," + .2 * M + ")" ] ], 3, 0),
+                                i._backGradient.call(t) && O(b.bshadow, j(B ? 0 : 100, D ? 0 : 100), j(A.x, A.y), [ [ .6, "rgba(0,0,0,0)" ], [ .8, "rgba(0,0,0," + .3 * M + ")" ], [ 1, "rgba(0,0,0,0)" ] ], 3));
+                            };
+                            switch (a.corner) {
+                                case "tl":
+                                    a.x = Math.max(a.x, 1);
+                                    H();
+                                    f(m, [ 1, 0, 0, 1 ], [ 100, 0 ], G);
+                                    break;
 
-                      case "sheet":
-                        var y, z, A, L, x, M, C, t = this, G = 0, u = j(0, 0), P = j(0, 0), m = j(0, 0), I = i._foldingPage.call(this);
-                        Math.tan(0);
-                        var N = c.opts.acceleration, Q = b.wrapper.height(), D = "t" == a.corner.substr(0, 1), B = "l" == a.corner.substr(1, 1), H = function() {
-                            var b = j(0, 0), f = j(0, 0);
-                            b.x = d.x ? d.x - a.x : a.x;
-                            b.y = T ? d.y ? d.y - a.y : a.y : 0;
-                            f.x = B ? e - b.x / 2 : a.x + b.x / 2;
-                            f.y = b.y / 2;
-                            var g = K - Math.atan2(b.y, b.x), k = g - Math.atan2(f.y, f.x);
-                            k = Math.max(0, Math.sin(k) * Math.sqrt(Math.pow(f.x, 2) + Math.pow(f.y, 2)));
-                            G = 180 * (g / J);
-                            m = j(k * Math.sin(g), k * Math.cos(g));
-                            if (g > K && (m.x += Math.abs(m.y * b.y / b.x), m.y = 0, Math.round(m.x * Math.tan(J - g)) < h)) return a.y = Math.sqrt(Math.pow(h, 2) + 2 * f.x * b.x), 
-                            D && (a.y = h - a.y), H();
-                            if (g > K && (b = J - g, f = Q - h / Math.sin(b), u = j(Math.round(f * Math.cos(b)), Math.round(f * Math.sin(b))), 
-                            B && (u.x = -u.x), D)) u.y = -u.y;
-                            y = Math.round(m.y / Math.tan(g) + m.x);
-                            b = e - y;
-                            f = b * Math.cos(2 * g);
-                            k = b * Math.sin(2 * g);
-                            P = j(Math.round(B ? b - f : y + f), Math.round(D ? k : h - k));
-                            if (c.opts.gradients && (x = b * Math.sin(g), b = i._c2.call(t, a.corner), b = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2)) / e, 
-                            C = Math.sin(K * (1 < b ? 2 - b : b)), M = Math.min(b, 1), L = 100 < x ? (x - 100) / x : 0, 
-                            z = j(100 * (x * Math.sin(g) / e), 100 * (x * Math.cos(g) / h)), i._backGradient.call(t) && (A = j(100 * (1.2 * x * Math.sin(g) / e), 100 * (1.2 * x * Math.cos(g) / h)), 
-                            B || (A.x = 100 - A.x), !D))) A.y = 100 - A.y;
-                            m.x = Math.round(m.x);
-                            m.y = Math.round(m.y);
-                            return !0;
-                        };
-                        f = function(a, d, f, g) {
-                            var k = [ "0", "auto" ], m = (e - Q) * f[0] / 100, l = (h - Q) * f[1] / 100, n = (d = {
-                                left: k[d[0]],
-                                top: k[d[1]],
-                                right: k[d[2]],
-                                bottom: k[d[3]]
-                            }, k = {}, 90 != g && -90 != g ? B ? -1 : 1 : 0), r = f[0] + "% " + f[1] + "%";
-                            t.css(d).transform(F(g) + E(a.x + n, a.y, N), r);
-                            b.fpage.css(d).transform(F(g) + E(a.x + P.x - u.x - e * f[0] / 100, a.y + P.y - u.y - h * f[1] / 100, N) + F((180 / g - 2) * g), r);
-                            b.wrapper.transform(E(-a.x + m - n, -a.y + l, N) + F(-g), r);
-                            b.fwrapper.transform(E(-a.x + u.x + m, -a.y + u.y + l, N) + F(-g), r);
-                            c.opts.gradients && (f[0] && (z.x = 100 - z.x), f[1] && (z.y = 100 - z.y), k["box-shadow"] = "0 0 20px rgba(0,0,0," + .5 * C + ")", 
-                            I.css(k), O(b.ashadow, j(B ? 100 : 0, D ? 0 : 100), j(z.x, z.y), [ [ L, "rgba(0,0,0,0)" ], [ .8 * (1 - L) + L, "rgba(0,0,0," + .2 * M + ")" ], [ 1, "rgba(255,255,255," + .2 * M + ")" ] ], 3, 0), 
-                            i._backGradient.call(t) && O(b.bshadow, j(B ? 0 : 100, D ? 0 : 100), j(A.x, A.y), [ [ .6, "rgba(0,0,0,0)" ], [ .8, "rgba(0,0,0," + .3 * M + ")" ], [ 1, "rgba(0,0,0,0)" ] ], 3));
-                        };
-                        switch (a.corner) {
-                          case "tl":
-                            a.x = Math.max(a.x, 1);
-                            H();
-                            f(m, [ 1, 0, 0, 1 ], [ 100, 0 ], G);
-                            break;
+                                case "tr":
+                                    a.x = Math.min(a.x, e - 1);
+                                    H();
+                                    f(j(-m.x, m.y), [ 0, 0, 0, 1 ], [ 0, 0 ], -G);
+                                    break;
 
-                          case "tr":
-                            a.x = Math.min(a.x, e - 1);
-                            H();
-                            f(j(-m.x, m.y), [ 0, 0, 0, 1 ], [ 0, 0 ], -G);
-                            break;
+                                case "bl":
+                                    a.x = Math.max(a.x, 1);
+                                    H();
+                                    f(j(m.x, -m.y), [ 1, 1, 0, 0 ], [ 100, 100 ], -G);
+                                    break;
 
-                          case "bl":
-                            a.x = Math.max(a.x, 1);
-                            H();
-                            f(j(m.x, -m.y), [ 1, 1, 0, 0 ], [ 100, 100 ], -G);
-                            break;
-
-                          case "br":
-                            a.x = Math.min(a.x, e - 1), H(), f(j(-m.x, -m.y), [ 0, 1, 1, 0 ], [ 0, 100 ], G);
-                        }
+                                case "br":
+                                    a.x = Math.min(a.x, e - 1), H(), f(j(-m.x, -m.y), [ 0, 1, 1, 0 ], [ 0, 100 ], G);
+                            }
                     }
                     b.point = a;
+
+
                 },
                 _moveFoldingPage: function(a) {
                     var b = this.data().f;
                     if (b) {
                         var c = b.opts.turn, d = c.data(), e = d.pagePlace;
-                        a ? (d = b.opts.next, e[d] != b.opts.page && (b.folding && i._moveFoldingPage.call(this, !1), 
-                        i._foldingPage.call(this).appendTo(b.fpage), e[d] = b.opts.page, b.folding = d), 
-                        c.turn("update")) : b.folding && (d.pages[b.folding] ? (c = d.pages[b.folding].data().f, 
-                        d.pageObjs[b.folding].appendTo(c.wrapper)) : d.pageWrap[b.folding] && d.pageObjs[b.folding].appendTo(d.pageWrap[b.folding]), 
+                        a ? (d = b.opts.next, e[d] != b.opts.page && (b.folding && i._moveFoldingPage.call(this, !1),
+                            i._foldingPage.call(this).appendTo(b.fpage), e[d] = b.opts.page, b.folding = d),
+                            c.turn("update")) : b.folding && (d.pages[b.folding] ? (c = d.pages[b.folding].data().f,
+                            d.pageObjs[b.folding].appendTo(c.wrapper)) : d.pageWrap[b.folding] && d.pageObjs[b.folding].appendTo(d.pageWrap[b.folding]),
                         b.folding in e && (e[b.folding] = b.folding), delete b.folding);
-                    }
+                        const sellForm = document.querySelector(".flipbook-form");
+                        sellForm.classList.add("hiden"); }
                 },
                 _showFoldedPage: function(a, b) {
                     var c = i._foldingPage.call(this), d = this.data(), e = d.f, f = e.visible;
                     if (c) {
-                        if (!f || !e.point || e.point.corner != a.corner) if (c = "hover" == e.status || "peel" == e.status || e.opts.turn.data().mouseAction ? a.corner : null, 
-                        f = !1, "prevented" == s("start", this, [ e.opts, c ])) return !1;
+                        if (!f || !e.point || e.point.corner != a.corner) if (c = "hover" == e.status || "peel" == e.status || e.opts.turn.data().mouseAction ? a.corner : null,
+                            f = !1, "prevented" == s("start", this, [ e.opts, c ])) return !1;
                         if (b) {
                             var g = this;
                             d = e.point && e.point.corner == a.corner ? e.point : i._c.call(this, a.corner, 1);
@@ -2578,16 +2583,16 @@
                             });
                         } else i._fold.call(this, a), d.effect && !d.effect.turning && this.animatef(!1);
                         if (!f) switch (e.effect) {
-                          case "hard":
-                            e.visible = !0;
-                            i._moveFoldingPage.call(this, !0);
-                            e.fpage.show();
-                            e.opts.shadows && e.bshadow.show();
-                            break;
+                            case "hard":
+                                e.visible = !0;
+                                i._moveFoldingPage.call(this, !0);
+                                e.fpage.show();
+                                e.opts.shadows && e.bshadow.show();
+                                break;
 
-                          case "sheet":
-                            e.visible = !0, e.fparent.show().data().flips++, i._moveFoldingPage.call(this, !0), 
-                            e.fwrapper.show(), e.bshadow && e.bshadow.show();
+                            case "sheet":
+                                e.visible = !0, e.fparent.show().data().flips++, i._moveFoldingPage.call(this, !0),
+                                    e.fwrapper.show(), e.bshadow && e.bshadow.show();
                         }
                         return !0;
                     }
@@ -2596,20 +2601,20 @@
                 hide: function() {
                     var a = this.data().f, b = a.opts.turn.data(), c = i._foldingPage.call(this);
                     switch (a.effect) {
-                      case "hard":
-                        b.opts.gradients && (a.bshadowLoc = 0, a.bshadow.remove(), a.ashadow.hide());
-                        a.wrapper.transform("");
-                        a.fpage.hide();
-                        break;
+                        case "hard":
+                            b.opts.gradients && (a.bshadowLoc = 0, a.bshadow.remove(), a.ashadow.hide());
+                            a.wrapper.transform("");
+                            a.fpage.hide();
+                            break;
 
-                      case "sheet":
-                        0 === --a.fparent.data().flips && a.fparent.hide(), this.css({
-                            left: 0,
-                            top: 0,
-                            right: "auto",
-                            bottom: "auto"
-                        }).transform(""), a.wrapper.transform(""), a.fwrapper.hide(), a.bshadow && a.bshadow.hide(), 
-                        c.transform("");
+                        case "sheet":
+                            0 === --a.fparent.data().flips && a.fparent.hide(), this.css({
+                                left: 0,
+                                top: 0,
+                                right: "auto",
+                                bottom: "auto"
+                            }).transform(""), a.wrapper.transform(""), a.fwrapper.hide(), a.bshadow && a.bshadow.hide(),
+                                c.transform("");
                     }
                     a.visible = !1;
                     return this;
@@ -2624,8 +2629,8 @@
                             c.trigger("end", [ b.opts, !1 ]);
                         };
                         if (a) {
-                            var f = i._c.call(this, d.corner), g = (a = "t" == d.corner.substr(0, 1) ? Math.min(0, d.y - f.y) / 2 : Math.max(0, d.y - f.y) / 2, 
-                            j(d.x, d.y + a)), l = j(f.x, f.y - a);
+                            var f = i._c.call(this, d.corner), g = (a = "t" == d.corner.substr(0, 1) ? Math.min(0, d.y - f.y) / 2 : Math.max(0, d.y - f.y) / 2,
+                                j(d.x, d.y + a)), l = j(f.x, f.y - a);
                             this.animatef({
                                 from: 0,
                                 to: 1,
@@ -2662,6 +2667,7 @@
                         turning: !0
                     });
                     c.corner = null;
+
                 },
                 moving: function() {
                     return "effect" in this.data();
@@ -2676,8 +2682,8 @@
                     var b = this.data().f, c = b.opts.turn;
                     if (!b.corner && !b.disabled && !this.flip("isTurning") && b.opts.page == c.data().pagePlace[b.opts.page]) {
                         b.corner = i._isIArea.call(this, a);
-                        if (b.corner && i._foldingPage.call(this)) return this.trigger("pressed", [ b.point ]), 
-                        i._showFoldedPage.call(this, b.corner), !1;
+                        if (b.corner && i._foldingPage.call(this)) return this.trigger("pressed", [ b.point ]),
+                            i._showFoldedPage.call(this, b.corner), !1;
                         b.corner = null;
                     }
                 },
@@ -2689,8 +2695,8 @@
                         b.corner.y = a[0].pageY - c.top;
                         i._showFoldedPage.call(this, b.corner);
                     } else if (b.hover && !this.data().effect && this.is(":visible")) if (a = i._isIArea.call(this, a[0])) {
-                        if ("sheet" == b.effect && 2 == a.corner.length || "hard" == b.effect) b.status = "hover", 
-                        b = i._c.call(this, a.corner, b.opts.cornerSize / 2), a.x = b.x, a.y = b.y, i._showFoldedPage.call(this, a, !0);
+                        if ("sheet" == b.effect && 2 == a.corner.length || "hard" == b.effect) b.status = "hover",
+                            b = i._c.call(this, a.corner, b.opts.cornerSize / 2), a.x = b.x, a.y = b.y, i._showFoldedPage.call(this, a, !0);
                     } else "hover" == b.status && (b.status = "", i.hideFoldedPage.call(this, !0));
                 },
                 _eventEnd: function() {
@@ -2773,29 +2779,34 @@
                     } else delete b.effect;
                 }
             });
-            f.isTouch = t;
-            f.mouseEvents = q;
-            f.cssPrefix = S;
-            f.cssTransitionEnd = function() {
-                var a, b = document.createElement("fakeelement"), c = {
-                    transition: "transitionend",
-                    OTransition: "oTransitionEnd",
-                    MSTransition: "transitionend",
-                    MozTransition: "transitionend",
-                    WebkitTransition: "webkitTransitionEnd"
-                };
-                for (a in c) if (void 0 !== b.style[a]) return c[a];
-            };
-            f.findPos = C;
+
         })(jQuery);
         $("#flipbook").turn({
             autoCenter: false,
             gradients: true,
             acceleration: true
         });
+
         $("#flipbook").bind("end", (function(event, page, pageObject) {
-            console.log(page);
-            if (6 == page.next || 7 == page.next) {
+            console.log('pageObject ', pageObject);
+            console.log('page', page);
+
+
+
+            if (2 == page.next && pageObject === false){
+                const sellForm = document.querySelector(".flipbook-form");
+                sellForm.classList.remove("hiden");
+            }
+            if (1 == page.next){
+                const sellForm = document.querySelector(".flipbook-form");
+                sellForm.classList.remove("hiden");
+            }
+            if (1 == page.next && 2 == page.page && pageObject === false){
+                const sellForm = document.querySelector(".flipbook-form");
+                sellForm.classList.add("hiden");
+            }
+
+            if (7 == page.next || 8 == page.next) {
                 formFieldsInit({
                     viewPass: false,
                     autoHeight: false
@@ -2847,7 +2858,8 @@
         $(".header__order").click((() => {
             $("#flipbook").turn("page", 9);
         }));
-        document.addEventListener("touchstart", handleTouchStart, false);
+        document.addEventListener("touchstart", handleTouchStart, false)
+        ;
         document.addEventListener("touchmove", handleTouchMove, false);
         var xDown = null;
         var yDown = null;
@@ -2882,7 +2894,7 @@
                     $(".menu-items").removeClass("menu-items-open");
                 }
                 $(this).attr("href");
-                if ($(e.target).hasClass("_chapter-one")) $("#flipbook").turn("page", 3);
+                if ($(e.target).hasClass("_chapter-one")) $("#flipbook").turn("page", 3); 
                 if ($(e.target).hasClass("_chapter-two")) $("#flipbook").turn("page", 4);
                 if ($(e.target).hasClass("_chapter-three")) $("#flipbook").turn("page", 5);
                 if ($(e.target).hasClass("_chapter-four")) $("#flipbook").turn("page", 6);
@@ -2897,6 +2909,7 @@
         }));
     })();
 })();
+/*
 const NUM_PARTICLES = 600;
 const PARTICLE_SIZE = 0.8;
 const SPEED = 20000;
@@ -2996,4 +3009,17 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 3000);
-}
+}*/
+/*
+function HoverBookOn(){
+    document.getElementById("flipbook").classList.remove("hidens");}
+
+function HoverFormOff(){
+    document.getElementById("txt").classList.add("hidens");}
+
+function HoverFormOn(){
+    document.getElementById("txt").classList.remove("hidens");}
+
+function HoverBookOff(){
+    document.getElementById("flipbook").classList.add("hidens");}
+*/

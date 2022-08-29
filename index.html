@@ -12,16 +12,22 @@
 
 </head>
 <body id="homepage">
-<!-- Прелоадер -->
+<!-- Прелоадер
 <div class="preloader">
 	<div class="preloader__image"></div>
-</div>
+</div>-->
 <canvas id="particle-canvas"></canvas>
 	<header>
 		<div>
 			<a href="#" class="header__order scrollto">
 				<h1>ЗАМОВИТИ</h1>
 				<h2>ЗАМОВИТИ</h2>
+				<div class="box">
+					<div class="icon">
+						<object type="image/svg+xml" data="img/Instagram.svg" id="svg">
+						</object>
+					</div>
+				</div>
 			</a>
 		</div>
 		<a href="https://t.me/Diploma_Expert_Bot" target="_blank" class="buy">ПИТАННЯ</a>
@@ -29,15 +35,40 @@
 	</header>
 	<article>
 		<main id="home">
-			<blockquote class="txt">
-				<br>────── •●• ──────<br>
-				Ми твій помічник та гід в написанні твоєї студентської роботи
-				<br>────── •●• ──────<br>
+			<blockquote id="txt"  class="txt">
+				<div class="txt2"> LOREM IPSUM asdasdasdad</div>
+				<br> <br>
+						 <form class="flipbook-form" method="post" action="contact.php">
+							<label class="form__label">sи</label>
+							<select name="select" data-class-modif="form">
+								<option value="Диплом" selected>s</option>
+								<option value="Магістерська">Магістерська</option>
+								<option value="Кваліфікаційна">Кваліфікаційна робота</option>
+								<option value="Курсова">Курсова</option>
+								<option value="Звіт з практики">Звіт з практики</option>
+								<option value="Презентація">Презентація</option>
+								<option value="Доповідь">Доповідь</option>
+							</select>
+							<div class="form__item">
+								<label class="form__label">s</label>
+								<input class="flipbook-form__input" autocomplete="off" type="text" name="name" placeholder="s" required>
+							</div>
+							<div>
+								<label class="form__label">s</label>
+								<input data-required id="date" autocomplete="off" type="text" name="date" placeholder="дд.мм.рррр" data-datepicker class="flipbook-form__input" readonly>
+							</div>
+							<div class="form__item">
+								<label class="form__label">Контакт</label>
+								<input class="flipbook-form__input" autocomplete="off" type="text" name="phone" placeholder="Telegram/E-mail/Телефон" required>
+							</div>
+							<input class="flipbook-form__button" type="submit" value="Замовити">
+							<input type="hidden" name="act" value="order">
+						</form>
 			</blockquote>
 			<div class="cover" id="cover">
 				<!-- partial:index.partial.html -->
 				<div id="flipbook" class="flipbook">
-					<div class="hard"> <picture><source data-srcset="img/1h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/1h.png" style="width: 100%"></picture></div>
+					<div class="hard2"> <picture><source data-srcset="img/1h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/1h.png" style="width: 100%"></picture></div>
 					<div class="hard2"> <picture><source data-srcset="img/2h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2h.png" style="width: 100%"></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/1.png" alt=""></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/2.png" alt=""></picture></div>
@@ -45,7 +76,7 @@
 					<div class="pages"> <picture><source data-srcset="img/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4.png" alt=""></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/5.png" alt=""></picture></div>
 					<div class="pages"> <picture><source data-srcset="img/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/6.png" alt=""></picture></div>
-					<div class="pages2">
+					<div class="pages2"><!--
 						<form action="#" class="flipbook-form">
 							<select name="select" data-class-modif="form">
 								<option value="1" selected>Диплом</option>
@@ -100,11 +131,11 @@
 								<label for="c_2" class="checkbox__label"><span class="checkbox__text">Я погоджуюсь на обробку персональних даних</span></label>
 							</div>
 							<button type="submit" class="flipbook-form__button">Замовити</button>
-						</form>
+						</form>-->
 					</div>
 					<div class="pages"> <picture><source data-srcset="img/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/7.png" alt=""></picture></div>
 					<div class="hard2"> <picture><source data-srcset="img/3h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/3h.png" style="width: 100%"></picture></div>
-					<div class="hard"> <picture><source data-srcset="img/4h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4h.png" style="width: 100%"></picture></div>
+					<div class="hard2"> <picture><source data-srcset="img/4h.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/4h.png" style="width: 100%"></picture></div>
 				</div>
 			</div>
 		</main>
@@ -176,7 +207,6 @@
 		</div>
 	</nav>
 	<footer class="footer">
-
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/app.js"></script>

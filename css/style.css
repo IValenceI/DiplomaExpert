@@ -171,10 +171,10 @@
   color: inherit;
   text-align: left;
   border: 0.0625rem solid rgba(0, 0, 0, 0.75);
-  background-color: #fff;
   cursor: pointer;
   width: 100%;
   position: relative;
+  background: transparent;
 }
 
 .select__title::before {
@@ -285,12 +285,15 @@
   text-align: left;
   cursor: pointer;
   color: inherit;
-  background-color: #fff;
+  background-color: #fffbf9;
   border-top: 0;
   padding: 0.625rem 0.625rem;
   border: 1px solid rgba(0, 0, 0, 0.75);
-}
 
+}
+.select__option:hover {
+  background-color: #edcdba;
+}
 .select__option:nth-child(2) {
   border-top: 2px solid #000;
 }
@@ -1014,9 +1017,10 @@ article img:first-child {
 }
 
 article blockquote {
-  margin: 4rem auto;
+  margin: 0 0 0 auto;
   font-style: italic;
-  padding: 0 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 90%;
 }
 
 article blockquote cite {
@@ -1313,8 +1317,8 @@ main#home div.cover img {
 }
 
 main#home blockquote {
-  text-align: center;
-  max-width: 25em;
+  position: relative;
+  max-width: 28em;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35%;
           flex: 0 0 35%;
@@ -1367,14 +1371,13 @@ body {
           transform: translate(-54%, 0) !important;
   width: 66.11vw;
   height: 46.7468293042vw;
-
 }
 
 .hard {
-
   color: white;
   font-weight: bolder;
   background-color: #edcdba;
+display: none;
 }
 .hard2 {
 
@@ -1417,7 +1420,11 @@ body {
   background-size: 100% 100%;
   background-color: white;
 }
+.pages22 {
 
+  background-size: 100% 100%;
+  background-color: white;
+}
 .footer {
   /* pos */
   bottom: 0px;
@@ -1429,21 +1436,42 @@ body {
 }
 
 .txt {
+  padding: 4rem;
+  max-width: 100%;
+  border: solid 3px rgba(61, 61, 61, 0.8);
   font-family: 'Lora', serif;
   position: relative;
-  font-size: 25px;
-}
+  font-size: 20px;
+  margin-right: 1.9rem ;
 
+}
+.txt2 {
+  line-height: 1;
+  font-family: 'Lora', serif;
+  position: relative;
+  font-size: 40px;
+  flex: 0 0 70%;
+}
 .txt_de {
 
   position: relative;
   font-size: 25px;
 }
-
+/*    form book        */
 .flipbook-form {
+  margin-top: 2rem;
+  font-size: 20px;
   position: relative;
-  width: 75%;
   z-index: 2;
+}
+
+.flipbook-form_1_box {
+  position: relative;
+  background: #000000;
+  opacity: 100%;
+}
+.flipbook-form_1 {
+  position: relative;
 }
 
 .flipbook-form__block {
@@ -1462,6 +1490,7 @@ body {
 
 .flipbook-form__inputname {
   width: 48%;
+
 }
 
 .flipbook-form__inputname_tel-email {
@@ -1492,12 +1521,11 @@ body {
 
 .flipbook-form label {
   font-family: 'Lora', serif;
-  font-weight: bold;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 .flipbook-form__input {
-  padding: 0.625rem 0.3125rem;
+  padding: 0.8rem 0.3125rem;
   background-color: transparent;
   width: 100%;
   font-size: 1rem;
@@ -1509,6 +1537,8 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: 1rem;
+
 }
 
 .flipbook-form__input:not(:last-child) {
@@ -1569,6 +1599,8 @@ body {
   background-color: rgb(241, 201, 166);
   border-radius: 0.3125rem;
 }
+/*            */
+
 .labels{
   position: absolute;
   top: -90%;
@@ -1581,7 +1613,16 @@ body {
   white-space: nowrap;
   margin-bottom: 10px
 }
-
+.select__title {
+  padding: 0.3125rem 0;
+  color: inherit;
+  text-align: left;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background: transparent;
+}
 
 @media (min-width: 500px) {
   header h2 {
@@ -1791,6 +1832,16 @@ body {
     height: 6em;
   }
 }
+.flipbook-form__button {
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  color: #3d3d3d;
+  width: 35%;
+  padding: 0.625rem 1.25rem;
+  background-color: rgb(241, 201, 166);
+  border-radius: 0.3125rem;
+  margin-top: 1rem;
+}
 
 @media (max-width: 1600px) {
   #flipbook {
@@ -1979,10 +2030,10 @@ body {
     color: inherit;
     text-align: left;
     border: 0.0625rem solid rgba(0, 0, 0, 0.75);
-    background-color: #fff;
     cursor: pointer;
     width: 100%;
     position: relative;
+    background: transparent;
   }
   .select:not(:last-child) {
     margin-bottom: 0.5rem;
@@ -3227,4 +3278,24 @@ body {
 
 .loaded .preloader {
   display: none;
+}
+.hiden{
+  z-index: 0;
+}
+.hidens{
+  z-index: 100;
+}
+.box{
+  position: absolute;
+  top: 35%;
+  left: 210%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+}
+.icon {
+
+  margin: auto;
+rotate:-90deg;
+  width: 30%;
+z-index: 10;
 }
