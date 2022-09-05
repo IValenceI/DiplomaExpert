@@ -2878,8 +2878,7 @@ display: none;
   }
   .social_boxx{
     position: relative;
-    margin-left: 10px;
-    margin-right: 0px;
+right: 20px;
   }
   .social_b{
     display: inherit;
@@ -3120,8 +3119,7 @@ display: none;
   }
   .social_boxx{
     position: relative;
-    margin-right: 10px;
-    margin-left: 0px;
+   right: 22px;
 
   }
   .txtt {
@@ -3363,9 +3361,7 @@ display: none;
   }
   .social_boxx{
     position: relative;
-    right: 2.2rem;
-    margin-left: 0px;
-    margin-right: 0px;
+    right: 30px;
   }
   .select__value > * {
     font-family: 'Lora', serif;
@@ -3626,6 +3622,10 @@ display: none;
   }
 }
 @media (max-width: 37.5em) {
+  .social_boxx{
+    position: relative;
+    right: 30px;
+  }
   .fon{
     height: 2000px;
   }
@@ -3661,7 +3661,7 @@ display: none;
   }
 
   body {
-    height: 160vh;
+    height: 200vh;
   }
   html {
     font-size: 14px;
@@ -3735,13 +3735,15 @@ display: none;
   }
   .social_boxx{
     position: relative;
-    right: 2.2rem;
-    margin-left: 0px;
-    margin-right: 0px;
+    right: 12px;
   }
 }
 
 @media (max-width: 25.9375em) {
+  .social_boxx{
+    position: relative;
+    right: 30px;
+  }
   .fon{
     height: 2000px;
   }
@@ -3775,16 +3777,13 @@ display: none;
   }
   .social_boxx{
     position: relative;
-    right: 2.2rem;
-    margin-left: 0px;
-    margin-right: 0px;
-
+    right: 30px;
   }
   .social_b{
     display: inherit;
   }
   body {
-    height: 160vh;
+    height: 200vh;
   }
   html {
     font-size: 14px;
