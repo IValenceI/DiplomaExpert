@@ -2806,6 +2806,10 @@ display: none;
 }
 
 @media (max-width: 600px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 200vh;
+  }
   .social_b{
     display: none;
   }
@@ -2868,6 +2872,15 @@ display: none;
 }
 
 @media (max-width: 480px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 200vh;
+  }
+  .social_boxx{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
   .social_b{
     display: inherit;
   }
@@ -3098,6 +3111,19 @@ display: none;
 }
 
 @media (max-width: 375px) {
+  .fon{
+    height: 2000px;
+  }
+  body {
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 160vh;
+  }
+  .social_boxx{
+    position: relative;
+    margin-right: 10px;
+    margin-left: 0px;
+
+  }
   .txtt {
     padding: 3rem;
     max-width: 100%;
@@ -3332,6 +3358,15 @@ display: none;
 
 
 @media (max-width: 320px) {
+  .fon{
+    height: 2000px;
+  }
+  .social_boxx{
+    position: relative;
+    right: 2.2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .select__value > * {
     font-family: 'Lora', serif;
     -webkit-box-flex: 1;
@@ -3365,7 +3400,7 @@ display: none;
 
   body {
     background-color: rgba(0, 0, 0, 0.03);
-    height: 200vh;
+    height: 160vh;
   }
   #flipbook {
     width: 90vw;
@@ -3591,6 +3626,9 @@ display: none;
   }
 }
 @media (max-width: 37.5em) {
+  .fon{
+    height: 2000px;
+  }
   .select__value > * {
     font-family: 'Lora', serif;
     -webkit-box-flex: 1;
@@ -3623,7 +3661,7 @@ display: none;
   }
 
   body {
-    height: 200vh;
+    height: 160vh;
   }
   html {
     font-size: 14px;
@@ -3695,9 +3733,18 @@ display: none;
   .txt2{
     font-size: 20px;
   }
+  .social_boxx{
+    position: relative;
+    right: 2.2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 25.9375em) {
+  .fon{
+    height: 2000px;
+  }
   .select__value > * {
     font-family: 'Lora', serif;
     -webkit-box-flex: 1;
@@ -3726,11 +3773,18 @@ display: none;
     position: relative;
     font-size: 20px;
   }
+  .social_boxx{
+    position: relative;
+    right: 2.2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
   .social_b{
     display: inherit;
   }
   body {
-    height: 200vh;
+    height: 160vh;
   }
   html {
     font-size: 14px;
