@@ -1455,7 +1455,6 @@ display: none;
   font-family: 'Lora', serif;
   position: relative;
   font-size: 20px;
-  margin-right: 3rem;
 }
 .txt2 {
   text-align: center;
@@ -3099,6 +3098,13 @@ display: none;
 }
 
 @media (max-width: 375px) {
+  .txtt {
+    padding: 3rem;
+    max-width: 100%;
+    font-family: 'Lora', serif;
+    position: relative;
+    font-size: 20px;
+  }
   .social_b{
     display: inherit;
   }
@@ -3326,13 +3332,40 @@ display: none;
 
 
 @media (max-width: 320px) {
+  .select__value > * {
+    font-family: 'Lora', serif;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 1rem;
+  }
+  .select__option {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    background-color: #fffbf9;
+    padding: 0.625rem 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    height: 3.1rem;
+    margin-top: -1.3rem;
+  }
+  .txtt {
+    padding: 2rem;
+    max-width: 100%;
+    font-family: 'Lora', serif;
+    position: relative;
+    font-size: 20px;
+  }
   .social_b{
     display: inherit;
   }
 
   body {
     background-color: rgba(0, 0, 0, 0.03);
-    height: 140vh;
+    height: 200vh;
   }
   #flipbook {
     width: 90vw;
@@ -3558,12 +3591,39 @@ display: none;
   }
 }
 @media (max-width: 37.5em) {
+  .select__value > * {
+    font-family: 'Lora', serif;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 1rem;
+  }
+  .select__option {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    background-color: #fffbf9;
+    padding: 0.625rem 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    height: 3.1rem;
+    margin-top: -1.3rem;
+  }
+  .txtt {
+    padding: 2rem;
+    max-width: 100%;
+    font-family: 'Lora', serif;
+    position: relative;
+    font-size: 20px;
+  }
   .social_b{
     display: inherit;
   }
 
   body {
-    height: 140vh;
+    height: 200vh;
   }
   html {
     font-size: 14px;
@@ -3638,11 +3698,39 @@ display: none;
 }
 
 @media (max-width: 25.9375em) {
+  .select__value > * {
+    font-family: 'Lora', serif;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 1rem;
+  }
+  .select__option {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    background-color: #fffbf9;
+    padding: 0.625rem 0.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    height: 3.1rem;
+    margin-top: -1.3rem;
+  }
+
+  .txtt {
+    padding: 2rem;
+    max-width: 100%;
+    font-family: 'Lora', serif;
+    position: relative;
+    font-size: 20px;
+  }
   .social_b{
     display: inherit;
   }
   body {
-    height: 140vh;
+    height: 200vh;
   }
   html {
     font-size: 14px;
