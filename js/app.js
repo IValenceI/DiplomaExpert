@@ -2909,7 +2909,7 @@
         }));
     })();
 })();
-/*
+
 const NUM_PARTICLES = 600;
 const PARTICLE_SIZE = 0.8;
 const SPEED = 20000;
@@ -3009,17 +3009,4 @@ window.onload = function () {
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 3000);
-}*/
-/*
-function HoverBookOn(){
-    document.getElementById("flipbook").classList.remove("hidens");}
-
-function HoverFormOff(){
-    document.getElementById("txt").classList.add("hidens");}
-
-function HoverFormOn(){
-    document.getElementById("txt").classList.remove("hidens");}
-
-function HoverBookOff(){
-    document.getElementById("flipbook").classList.add("hidens");}
-*/
+}
